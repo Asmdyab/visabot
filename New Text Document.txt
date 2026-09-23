@@ -1,0 +1,2287 @@
+🚀 Starting DNS pre-warming...
+[04:31:31.040] 🎭 Default spoofed IP for general requests: 102.43.41.232
+[04:31:31.050]    ⚠️ Note: Professional APIs ignore these headers and check actual IP
+[04:31:31.051] 🎯 TLS Stealth ENABLED - Using Chrome-like cipher configuration
+[04:31:31.051] 🔧 Per-Account Agents ENABLED - Each account has isolated connections (fast + stable)
+[04:31:31.052] 🔄 Token Refresh Config:
+[04:31:31.052]    Refresh Interval: 14 minutes
+[04:31:31.053]    Auto Refresh: ENABLED
+[04:31:31.053]    Reactive Refresh (on 401): DISABLED
+[04:31:31.053]    Keep-Alive: DISABLED
+[04:31:31.054]    Refresh Buffer: 120s before expiry
+[04:31:31.055] 🖥️ Windows clock mode | قالطإلا ىلع ةعاس زاهجلا | نآلا 04:31:31.055
+[04:31:31.056] 🚀 Starting GROUP Mode: Cairo | Re-entry Visa (D)
+[04:31:31.057]    🪟 Window title mode: دصر-طغضلا
+[04:31:31.057] ============================================================
+[04:31:31.058]
+[04:31:31.058] ✅ FIXES:
+[04:31:31.059]    • Uses correct API endpoints (months -> days -> slots)
+[04:31:31.060]    • Properly checks actual available appointments
+[04:31:31.060]    • Includes tripDate parameter
+[04:31:31.061]
+[04:31:31.062] 💡 Strategy:
+[04:31:31.062]    • Phase 1: Login all accounts (WITHOUT proxy)
+[04:31:31.063]    • Phase 2: Assign unique proxy IP to each account
+[04:31:31.063]    • Phase 3: Run parallel checks on all accounts (WITH proxy)
+[04:31:31.064]
+[04:31:31.064] ⚠️ Configuration:
+[04:31:31.065]    • Office / Visa: PER-ACCOUNT (from each account in accounts.json)
+[04:31:31.065]    • This window group: Re-entry Visa (D)
+[04:31:31.066]    • Trip Date: 01/05/2026
+[04:31:31.066]    • Destination: roma
+[04:31:31.067]    • Requests per minute: 800
+[04:31:31.067]    • Max accounts: 10000
+[04:31:31.068]    • Proxy: Disabled
+[04:31:31.068]    • Rate limit cooldown: 60 minutes
+[04:31:31.069]    • 🆕 Mode: GROUP WINDOW → Re-entry Visa (D)
+[04:31:31.069]
+[04:31:31.070] ============================================================
+[04:31:31.070]
+[04:31:31.071] ✅ Found 102 account(s)
+[04:31:31.072] 🔹 Using 102 account(s)
+[04:31:31.072] 🎫 Group filter "Cairo | Re-entry Visa (D)": 102/102 account(s)
+[04:31:31.073]
+[04:31:31.073] 📋 ACCOUNT OFFICE + VISA (from accounts.json — this is what will be used):
+[04:31:31.074]    ✅ sakr900800@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.074]    ✅ waleed.mohamed19861986@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.075]    ✅ yaseinsabry.2018@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.075]    ✅ mervatahmed1971@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.076]    ✅ ahmedmohamedelsayed55555@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.076]    ✅ hemdantallat89878@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.077]    ✅ alihashem456789@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.077]    ✅ alisamir55555@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.078]    ✅ ahmedissam555444@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.078]    ✅ ahmednazmy456789@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.079]    ✅ adhmalsyd809@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.079]    ✅ elsayedsaadeldin555@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.080]    ✅ elarabiabdelwahab986@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.081]    ✅ abdallamohamed444445@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.081]    ✅ hanaagamal666698@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.082]    ✅ mohamedmahmoud5558@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.082]    ✅ aymanwagih555@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.083]    ✅ rabie20042004@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.083]    ✅ rawanahmed.2003@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.083]    ✅ seifeldin.saadeldin@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.084]    ✅ ahmed.dawoud@mail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.084]    ✅ mohamedsabry.2014@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.085]    ✅ shaimaaismaeil.1989@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.085]    ✅ salmasabry.2016@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.086]    ✅ znasr4166@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.086]    ✅ adham.kashkoush1997@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.087]    ✅ basemhanoura@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.088]    ✅ ahmed.shetia1986@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.088]    ✅ shedideslam@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.089]    ✅ heshamshedid8@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.089]    ✅ ahmed.saafan19951995@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.090]    ✅ mahmoud.ahmed20002000@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.090]    ✅ mohamed.mohamed19911@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.091]    ✅ mostafa.19981998@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.091]    ✅ nada.moustafa2000@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.092]    ✅ redaelkhateib@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.092]    ✅ leenaly10@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.092]    ✅ ahmedmahmoudelkasrawy@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.093]    ✅ mohamedshahin2851992@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.094]    ✅ tamerbeshirmousa@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.094]    ✅ elsayedahmed111@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.095]    ✅ omarmohamedradwan3@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.095]    ✅ roudiselim04@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.096]    ✅ shaaban199402@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.096]    ✅ mahmoudradi216@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.097]    ✅ walidsomda@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.097]    ✅ mahmoud.hesham2060@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.098]    ✅ adamzanaty2018@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.098]    ✅ hanazanaty2011@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.099]    ✅ islammohamedmohamed1994@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.099]    ✅ hossamtaman@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.100]    ✅ mahmoudd6@outlook.sa → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.100]    ✅ mo1979979@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.101]    ✅ yousefkhalaf2006@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.102]    ✅ alaaelnakoury2@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.102]    ✅ mohamedmostafait1993@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.103]    ✅ yousef.italy2004@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.103]    ✅ mostafaali20062006@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.103]    ✅ hagartaher.2002@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.104]    ✅ rashamohamed1974@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.104]    ✅ ahmedhamoud2344@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.105]    ✅ asmaa2210mm@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.105]    ✅ magedelsayed1997@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.106]    ✅ sara.roma2025@outlook.it → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.106]    ✅ asil24@outlook.it → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.107]    ✅ mostafa2567@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.108]    ✅ rodyazab1@outlook.it → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.108]    ✅ fahd.roma@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.109]    ✅ eslam8897@outlook.sa → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.109]    ✅ mohamed2210hhm@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.110]    ✅ mennatallahhatem1991@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.110]    ✅ mohamedelabras30@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.111]    ✅ alielemam173@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.111]    ✅ ahmedmady1622000@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.112]    ✅ elgendy20031@hotmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.112]    ✅ mostafaabdall45@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.113]    ✅ mohamedabousoliman856@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.113]    ✅ lailaelhabiby@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.114]    ✅ mohamedelgendy2000-2000@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.114]    ✅ hemaalbrens1111@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.115]    ✅ mohammedmedhat1515@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.116]    ✅ fatmasobhy@hostsmartsolution.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.116]    ✅ ebrahimwardntou@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.117]    ✅ 000tawfik@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.117]    ✅ eeskandar936@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.118]    ✅ moustafa22339@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.118]    ✅ Hikalmko@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.119]    ✅ azb73147@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.119]    ✅ aymantash443@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.120]    ✅ 00aasaid@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.120]    ✅ ahmedyyy1234@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.120]    ✅ maihesham1984@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.121]    ✅ ahmedelhamy1985@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.122]    ✅ gana.ahmed@mail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.122]    ✅ zeina.ahmed@mail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.123]    ✅ ola.mohamed@mail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.123]    ✅ omnia.gomaa@mail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.124]    ✅ kmsmady@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.124]    ✅ magedmady@gmail.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.125]    ✅ marina202630@outlook.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.125]    ✅ nnabilnawar@yahoo.com → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.126]    ✅ ragiarizk@outlook.sa → Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:31:31.126]
+[04:31:31.127]
+============================================================
+[04:31:31.127] 📡🌡️ PRESSURE GATE ENABLED — بقاري طغضلا لّغشيو عضولا راتخملا ًايئاقلت
+[04:31:31.128] ============================================================
+
+[04:31:31.129]
+============================================================
+[04:31:31.129] 📡🌡️ PRESSURE GATE (ةباوب دصر طغضلا)
+[04:31:31.130] ============================================================
+[04:31:31.130] 📋 رودلا:
+[04:31:31.131]    • سيقيب جنيبلا رفريسل عقوملا بقاريو طغضلا لبق سأر لك 5 قياقد ب 12 ةيناث
+[04:31:31.131]    • لوأ ام سحي ةيادبب طغضلا (جنيب ≥ 400ms × 2 تانيع) → لّغشي عضولا يللا تنا هراتخم ًايئاقلت
+[04:31:31.132]    • طايتحا: ول لصو سأر قياقدلا نم ريغ طغض → لّغشي عضولا دنع دحلا هسفن (لّعفم)
+[04:31:31.132]    • دعب ام عضولا صّلخي هلغش → عجريب بقاري سأرلل ياجلا
+[04:31:31.133] ============================================================
+
+[04:31:31.133]
+⏳ جنيب ساسألا: ريغ ساقم دعب | دصرلا أدبي 04:34:48.000 (لبق سأر 5 د ب 12 ث)
+✅ Pre-cached DNS: egyapi.almaviva-visa.it -> 18.156.16.255
+✅ Pre-cached DNS: egyiam.almaviva-visa.it -> 18.156.16.255
+✅ Pre-cached DNS: checkip.amazonaws.com -> 34.242.85.232
+✅ Pre-cached DNS: api.ipify.org -> 172.67.74.152
+✅ DNS pre-warming complete!
+[04:34:48.000] 👀 [سأر #1] ةذفان دصرلا تأدب 04:34:48.000 — جنيب لك 1200ms، ةبتع طغضلا 400ms
+[04:34:48.001]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+(node:6536) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[04:34:48.572]    ⬅️ [pressure-ping] Status: 200 OK (571ms)
+[04:34:48.583]       Content-Type: unknown
+[04:34:48.584]       Content-Length: 0
+[04:34:48.585]    ⚡ جنيب 584ms (1× ةيلاتتم قوف ةبتعلا — طغض ؟مداق)
+[04:34:49.800]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:49.926]    ⬅️ [pressure-ping] Status: 200 OK (126ms)
+[04:34:49.927]       Content-Type: unknown
+[04:34:49.928]       Content-Length: 0
+[04:34:51.133]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:51.266]    ⬅️ [pressure-ping] Status: 200 OK (133ms)
+[04:34:51.268]       Content-Type: unknown
+[04:34:51.268]       Content-Length: 0
+[04:34:52.476]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:52.600]    ⬅️ [pressure-ping] Status: 200 OK (124ms)
+[04:34:52.601]       Content-Type: unknown
+[04:34:52.602]       Content-Length: 0
+[04:34:53.818]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:53.950]    ⬅️ [pressure-ping] Status: 200 OK (132ms)
+[04:34:53.951]       Content-Type: unknown
+[04:34:53.952]       Content-Length: 0
+[04:34:53.952]    📊 جنيب ساسألا: 132ms
+[04:34:55.158]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:55.282]    ⬅️ [pressure-ping] Status: 200 OK (124ms)
+[04:34:55.283]       Content-Type: unknown
+[04:34:55.284]       Content-Length: 0
+[04:34:56.498]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:56.641]    ⬅️ [pressure-ping] Status: 200 OK (143ms)
+[04:34:56.642]       Content-Type: unknown
+[04:34:56.642]       Content-Length: 0
+[04:34:57.856]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:57.981]    ⬅️ [pressure-ping] Status: 200 OK (125ms)
+[04:34:57.982]       Content-Type: unknown
+[04:34:57.983]       Content-Length: 0
+[04:34:59.198]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:34:59.325]    ⬅️ [pressure-ping] Status: 200 OK (127ms)
+[04:34:59.326]       Content-Type: unknown
+[04:34:59.327]       Content-Length: 0
+[04:35:00.542]    ➡️ [pressure-ping] GET https://egyapi.almaviva-visa.it/
+[04:35:00.666]    ⬅️ [pressure-ping] Status: 200 OK (124ms)
+[04:35:00.667]       Content-Type: unknown
+[04:35:00.668]       Content-Length: 0
+[04:35:00.668]
+⏰ انلصو سأر قياقدلا نم ريغ طغض حضاو — ليغشت عضولا راتخملا (طايتحا)
+[04:35:00.793]
+============================================================
+[04:35:00.795] 🔐 PHASE 1: LOGIN ALL ACCOUNTS (WITHOUT PROXY)
+[04:35:00.797] ============================================================
+
+[04:35:00.799] ⚡ Firing 102 logins at the same moment (ROPC)...
+[04:35:00.819]    🚀 Armed 102 login requests in 18ms
+[04:35:01.623]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.648]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.818]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.839]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.845]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.868]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.883]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.890]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.891]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.902]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.909]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.920]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.921]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.937]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.940]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.946]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.962]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.972]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:01.997]    ⏰ Token will be refreshed at 4:50:01 AM (server expiry (900s))
+[04:35:02.007]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.046]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.067]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.068]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.075]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.090]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.393]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.402]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.409]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.427]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.430]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.442]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.461]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.471]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.480]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.483]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.487]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.495]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.507]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.519]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.520]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.530]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.539]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.548]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.561]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.568]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.578]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.608]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.615]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.626]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.640]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.651]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.660]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.670]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.690]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.714]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.725]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.735]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.744]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.752]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.762]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.810]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.821]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.829]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.838]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.847]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.858]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.866]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.876]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.885]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.918]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.921]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.931]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.948]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.955]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:02.974]    ⏰ Token will be refreshed at 4:50:02 AM (server expiry (900s))
+[04:35:03.026]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.033]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.044]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.052]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.065]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.073]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.082]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.087]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.111]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.121]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.130]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.139]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.149]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.157]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.177]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.178]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.185]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.214]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.223]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.241]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.314]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.320]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.329]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.338]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.348]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.357]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.387]    ⏰ Token will be refreshed at 4:50:03 AM (server expiry (900s))
+[04:35:03.388]    ✓ [sakr900800@gmail.com] Success | IP: n/a
+[04:35:03.388]    ✓ [waleed.mohamed19861986@gmail.com] Success | IP: n/a
+[04:35:03.389]    ✓ [yaseinsabry.2018@outlook.com] Success | IP: n/a
+[04:35:03.389]    ✓ [mervatahmed1971@outlook.com] Success | IP: n/a
+[04:35:03.390]    ✓ [ahmedmohamedelsayed55555@gmail.com] Success | IP: n/a
+[04:35:03.390]    ✓ [hemdantallat89878@hotmail.com] Success | IP: n/a
+[04:35:03.391]    ✓ [alihashem456789@gmail.com] Success | IP: n/a
+[04:35:03.393]    ✓ [alisamir55555@outlook.com] Success | IP: n/a
+[04:35:03.394]    ✓ [ahmedissam555444@gmail.com] Success | IP: n/a
+[04:35:03.394]    ✓ [ahmednazmy456789@hotmail.com] Success | IP: n/a
+[04:35:03.395]    ✓ [adhmalsyd809@gmail.com] Success | IP: n/a
+[04:35:03.396]    ✓ [elsayedsaadeldin555@hotmail.com] Success | IP: n/a
+[04:35:03.396]    ✓ [elarabiabdelwahab986@gmail.com] Success | IP: n/a
+[04:35:03.397]    ✓ [abdallamohamed444445@gmail.com] Success | IP: n/a
+[04:35:03.397]    ✓ [hanaagamal666698@outlook.com] Success | IP: n/a
+[04:35:03.398]    ✓ [mohamedmahmoud5558@hotmail.com] Success | IP: n/a
+[04:35:03.399]    ✓ [aymanwagih555@gmail.com] Success | IP: n/a
+[04:35:03.400]    ✓ [rabie20042004@gmail.com] Success | IP: n/a
+[04:35:03.400]    ✓ [rawanahmed.2003@outlook.com] Success | IP: n/a
+[04:35:03.401]    ✓ [seifeldin.saadeldin@hotmail.com] Success | IP: n/a
+[04:35:03.401]    ✓ [ahmed.dawoud@mail.com] Success | IP: n/a
+[04:35:03.402]    ✓ [mohamedsabry.2014@outlook.com] Success | IP: n/a
+[04:35:03.403]    ✓ [shaimaaismaeil.1989@outlook.com] Success | IP: n/a
+[04:35:03.404]    ✓ [salmasabry.2016@outlook.com] Success | IP: n/a
+[04:35:03.404]    ✓ [znasr4166@gmail.com] Success | IP: n/a
+[04:35:03.406]    ✓ [adham.kashkoush1997@outlook.com] Success | IP: n/a
+[04:35:03.406]    ✓ [basemhanoura@gmail.com] Success | IP: n/a
+[04:35:03.407]    ✓ [ahmed.shetia1986@outlook.com] Success | IP: n/a
+[04:35:03.407]    ✓ [shedideslam@gmail.com] Success | IP: n/a
+[04:35:03.408]    ✓ [heshamshedid8@gmail.com] Success | IP: n/a
+[04:35:03.409]    ✓ [ahmed.saafan19951995@outlook.com] Success | IP: n/a
+[04:35:03.410]    ✓ [mahmoud.ahmed20002000@outlook.com] Success | IP: n/a
+[04:35:03.410]    ✓ [mohamed.mohamed19911@outlook.com] Success | IP: n/a
+[04:35:03.411]    ✓ [mostafa.19981998@outlook.com] Success | IP: n/a
+[04:35:03.412]    ✓ [nada.moustafa2000@outlook.com] Success | IP: n/a
+[04:35:03.413]    ✓ [redaelkhateib@outlook.com] Success | IP: n/a
+[04:35:03.413]    ✓ [leenaly10@outlook.com] Success | IP: n/a
+[04:35:03.414]    ✓ [ahmedmahmoudelkasrawy@gmail.com] Success | IP: n/a
+[04:35:03.414]    ✓ [mohamedshahin2851992@gmail.com] Success | IP: n/a
+[04:35:03.415]    ✓ [tamerbeshirmousa@gmail.com] Success | IP: n/a
+[04:35:03.415]    ✓ [elsayedahmed111@outlook.com] Success | IP: n/a
+[04:35:03.416]    ✓ [omarmohamedradwan3@gmail.com] Success | IP: n/a
+[04:35:03.417]    ✓ [roudiselim04@gmail.com] Success | IP: n/a
+[04:35:03.418]    ✓ [shaaban199402@outlook.com] Success | IP: n/a
+[04:35:03.419]    ✓ [mahmoudradi216@gmail.com] Success | IP: n/a
+[04:35:03.419]    ✓ [walidsomda@gmail.com] Success | IP: n/a
+[04:35:03.420]    ✓ [mahmoud.hesham2060@outlook.com] Success | IP: n/a
+[04:35:03.420]    ✓ [adamzanaty2018@outlook.com] Success | IP: n/a
+[04:35:03.421]    ✓ [hanazanaty2011@outlook.com] Success | IP: n/a
+[04:35:03.422]    ✓ [islammohamedmohamed1994@outlook.com] Success | IP: n/a
+[04:35:03.422]    ✓ [hossamtaman@outlook.com] Success | IP: n/a
+[04:35:03.423]    ✓ [mahmoudd6@outlook.sa] Success | IP: n/a
+[04:35:03.427]    ✓ [mo1979979@outlook.com] Success | IP: n/a
+[04:35:03.428]    ✓ [yousefkhalaf2006@outlook.com] Success | IP: n/a
+[04:35:03.428]    ✓ [alaaelnakoury2@gmail.com] Success | IP: n/a
+[04:35:03.429]    ✓ [mohamedmostafait1993@gmail.com] Success | IP: n/a
+[04:35:03.430]    ✓ [yousef.italy2004@gmail.com] Success | IP: n/a
+[04:35:03.430]    ✓ [mostafaali20062006@outlook.com] Success | IP: n/a
+[04:35:03.431]    ✓ [hagartaher.2002@gmail.com] Success | IP: n/a
+[04:35:03.432]    ✓ [rashamohamed1974@outlook.com] Success | IP: n/a
+[04:35:03.432]    ✓ [ahmedhamoud2344@gmail.com] Success | IP: n/a
+[04:35:03.433]    ✓ [asmaa2210mm@gmail.com] Success | IP: n/a
+[04:35:03.434]    ✓ [magedelsayed1997@outlook.com] Success | IP: n/a
+[04:35:03.434]    ✓ [sara.roma2025@outlook.it] Success | IP: n/a
+[04:35:03.435]    ✓ [asil24@outlook.it] Success | IP: n/a
+[04:35:03.435]    ✓ [mostafa2567@outlook.com] Success | IP: n/a
+[04:35:03.436]    ✓ [rodyazab1@outlook.it] Success | IP: n/a
+[04:35:03.437]    ✓ [fahd.roma@outlook.com] Success | IP: n/a
+[04:35:03.438]    ✓ [eslam8897@outlook.sa] Success | IP: n/a
+[04:35:03.440]    ✓ [mohamed2210hhm@gmail.com] Success | IP: n/a
+[04:35:03.441]    ✓ [mennatallahhatem1991@outlook.com] Success | IP: n/a
+[04:35:03.441]    ✓ [mohamedelabras30@gmail.com] Success | IP: n/a
+[04:35:03.442]    ✓ [alielemam173@gmail.com] Success | IP: n/a
+[04:35:03.442]    ✓ [ahmedmady1622000@gmail.com] Success | IP: n/a
+[04:35:03.443]    ✓ [elgendy20031@hotmail.com] Success | IP: n/a
+[04:35:03.444]    ✓ [mostafaabdall45@gmail.com] Success | IP: n/a
+[04:35:03.444]    ✓ [mohamedabousoliman856@gmail.com] Success | IP: n/a
+[04:35:03.445]    ✓ [lailaelhabiby@outlook.com] Success | IP: n/a
+[04:35:03.446]    ✓ [mohamedelgendy2000-2000@outlook.com] Success | IP: n/a
+[04:35:03.447]    ✓ [hemaalbrens1111@gmail.com] Success | IP: n/a
+[04:35:03.447]    ✓ [mohammedmedhat1515@gmail.com] Success | IP: n/a
+[04:35:03.448]    ✓ [fatmasobhy@hostsmartsolution.com] Success | IP: n/a
+[04:35:03.449]    ✓ [ebrahimwardntou@outlook.com] Success | IP: n/a
+[04:35:03.449]    ✓ [000tawfik@gmail.com] Success | IP: n/a
+[04:35:03.450]    ✓ [eeskandar936@gmail.com] Success | IP: n/a
+[04:35:03.450]    ✓ [moustafa22339@gmail.com] Success | IP: n/a
+[04:35:03.451]    ✓ [Hikalmko@gmail.com] Success | IP: n/a
+[04:35:03.452]    ✓ [azb73147@gmail.com] Success | IP: n/a
+[04:35:03.452]    ✓ [aymantash443@gmail.com] Success | IP: n/a
+[04:35:03.453]    ✓ [00aasaid@gmail.com] Success | IP: n/a
+[04:35:03.454]    ✓ [ahmedyyy1234@outlook.com] Success | IP: n/a
+[04:35:03.455]    ✓ [maihesham1984@outlook.com] Success | IP: n/a
+[04:35:03.456]    ✓ [ahmedelhamy1985@outlook.com] Success | IP: n/a
+[04:35:03.456]    ✓ [gana.ahmed@mail.com] Success | IP: n/a
+[04:35:03.457]    ✓ [zeina.ahmed@mail.com] Success | IP: n/a
+[04:35:03.457]    ✓ [ola.mohamed@mail.com] Success | IP: n/a
+[04:35:03.458]    ✓ [omnia.gomaa@mail.com] Success | IP: n/a
+[04:35:03.459]    ✓ [kmsmady@gmail.com] Success | IP: n/a
+[04:35:03.460]    ✓ [magedmady@gmail.com] Success | IP: n/a
+[04:35:03.461]    ✓ [marina202630@outlook.com] Success | IP: n/a
+[04:35:03.461]    ✓ [nnabilnawar@yahoo.com] Success | IP: n/a
+[04:35:03.462]    ✓ [ragiarizk@outlook.sa] Success | IP: n/a
+[04:35:03.463] ⚡ Simultaneous login done: 102 ok, 0 failed (2662ms total)
+[04:35:03.463]
+✅ Successfully logged in 102 account(s)
+[04:35:03.464]
+============================================================
+[04:35:03.465] ✅ PHASE 2: IPs already assigned during login
+[04:35:03.465] ============================================================
+
+[04:35:03.466]
+============================================================
+[04:35:03.467] 📋 RESOLVING PER-ACCOUNT OFFICE + VISA
+[04:35:03.468] ============================================================
+
+[04:35:03.468] ✅ [sakr900800@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.469] ✅ [waleed.mohamed19861986@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.469] ✅ [yaseinsabry.2018@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.470] ✅ [mervatahmed1971@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.471] ✅ [ahmedmohamedelsayed55555@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.471] ✅ [hemdantallat89878@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.472] ✅ [alihashem456789@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.473] ✅ [alisamir55555@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.473] ✅ [ahmedissam555444@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.474] ✅ [ahmednazmy456789@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.475] ✅ [adhmalsyd809@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.476] ✅ [elsayedsaadeldin555@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.477] ✅ [elarabiabdelwahab986@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.478] ✅ [abdallamohamed444445@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.478] ✅ [hanaagamal666698@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.479] ✅ [mohamedmahmoud5558@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.479] ✅ [aymanwagih555@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.479] ✅ [rabie20042004@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.480] ✅ [rawanahmed.2003@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.480] ✅ [seifeldin.saadeldin@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.481] ✅ [ahmed.dawoud@mail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.481] ✅ [mohamedsabry.2014@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.482] ✅ [shaimaaismaeil.1989@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.482] ✅ [salmasabry.2016@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.483] ✅ [znasr4166@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.484] ✅ [adham.kashkoush1997@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.484] ✅ [basemhanoura@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.485] ✅ [ahmed.shetia1986@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.485] ✅ [shedideslam@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.486] ✅ [heshamshedid8@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.487] ✅ [ahmed.saafan19951995@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.488] ✅ [mahmoud.ahmed20002000@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.489] ✅ [mohamed.mohamed19911@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.490] ✅ [mostafa.19981998@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.490] ✅ [nada.moustafa2000@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.491] ✅ [redaelkhateib@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.491] ✅ [leenaly10@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.492] ✅ [ahmedmahmoudelkasrawy@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.492] ✅ [mohamedshahin2851992@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.493] ✅ [tamerbeshirmousa@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.493] ✅ [elsayedahmed111@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.494] ✅ [omarmohamedradwan3@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.494] ✅ [roudiselim04@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.495] ✅ [shaaban199402@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.495] ✅ [mahmoudradi216@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.496] ✅ [walidsomda@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.496] ✅ [mahmoud.hesham2060@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.497] ✅ [adamzanaty2018@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.497] ✅ [hanazanaty2011@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.498] ✅ [islammohamedmohamed1994@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.498] ✅ [hossamtaman@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.499] ✅ [mahmoudd6@outlook.sa] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.500] ✅ [mo1979979@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.501] ✅ [yousefkhalaf2006@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.502] ✅ [alaaelnakoury2@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.503] ✅ [mohamedmostafait1993@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.504] ✅ [yousef.italy2004@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.504] ✅ [mostafaali20062006@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.505] ✅ [hagartaher.2002@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.505] ✅ [rashamohamed1974@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.506] ✅ [ahmedhamoud2344@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.506] ✅ [asmaa2210mm@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.507] ✅ [magedelsayed1997@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.508] ✅ [sara.roma2025@outlook.it] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.508] ✅ [asil24@outlook.it] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.509] ✅ [mostafa2567@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.509] ✅ [rodyazab1@outlook.it] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.510] ✅ [fahd.roma@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.510] ✅ [eslam8897@outlook.sa] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.511] ✅ [mohamed2210hhm@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.511] ✅ [mennatallahhatem1991@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.512] ✅ [mohamedelabras30@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.512] ✅ [alielemam173@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.513] ✅ [ahmedmady1622000@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.514] ✅ [elgendy20031@hotmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.514] ✅ [mostafaabdall45@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.515] ✅ [mohamedabousoliman856@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.517] ✅ [lailaelhabiby@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.518] ✅ [mohamedelgendy2000-2000@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.518] ✅ [hemaalbrens1111@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.519] ✅ [mohammedmedhat1515@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.519] ✅ [fatmasobhy@hostsmartsolution.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.520] ✅ [ebrahimwardntou@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.520] ✅ [000tawfik@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.521] ✅ [eeskandar936@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.521] ✅ [moustafa22339@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.522] ✅ [Hikalmko@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.522] ✅ [azb73147@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.523] ✅ [aymantash443@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.523] ✅ [00aasaid@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.524] ✅ [ahmedyyy1234@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.524] ✅ [maihesham1984@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.525] ✅ [ahmedelhamy1985@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.525] ✅ [gana.ahmed@mail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.526] ✅ [zeina.ahmed@mail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.526] ✅ [ola.mohamed@mail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.527] ✅ [omnia.gomaa@mail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.528] ✅ [kmsmady@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.528] ✅ [magedmady@gmail.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.530] ✅ [marina202630@outlook.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.530] ✅ [nnabilnawar@yahoo.com] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.531] ✅ [ragiarizk@outlook.sa] Office: Cairo (1) | Visa: Re-entry Visa (D) (4)
+[04:35:03.532]
+============================================================
+[04:35:03.532] 🔄 PHASE 3: PARALLEL CHECKING
+[04:35:03.533] ============================================================
+
+[04:35:03.533] 🚀 Starting parallel checks on 102 account(s)...
+
+[04:35:03.534]
+▶️ Starting checker for sakr900800@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.535]
+▶️ Starting checker for waleed.mohamed19861986@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.535]
+▶️ Starting checker for yaseinsabry.2018@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.536]
+▶️ Starting checker for mervatahmed1971@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.536]
+▶️ Starting checker for ahmedmohamedelsayed55555@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.537]
+▶️ Starting checker for hemdantallat89878@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.537]
+▶️ Starting checker for alihashem456789@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.538]
+▶️ Starting checker for alisamir55555@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.538]
+▶️ Starting checker for ahmedissam555444@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.539]
+▶️ Starting checker for ahmednazmy456789@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.539]
+▶️ Starting checker for adhmalsyd809@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.540]
+▶️ Starting checker for elsayedsaadeldin555@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.540]
+▶️ Starting checker for elarabiabdelwahab986@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.541]
+▶️ Starting checker for abdallamohamed444445@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.542]
+▶️ Starting checker for hanaagamal666698@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.542]
+▶️ Starting checker for mohamedmahmoud5558@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.543]
+▶️ Starting checker for aymanwagih555@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.544]
+▶️ Starting checker for rabie20042004@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.545]
+▶️ Starting checker for rawanahmed.2003@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.545]
+▶️ Starting checker for seifeldin.saadeldin@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.546]
+▶️ Starting checker for ahmed.dawoud@mail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.546]
+▶️ Starting checker for mohamedsabry.2014@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.547]
+▶️ Starting checker for shaimaaismaeil.1989@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.547]
+▶️ Starting checker for salmasabry.2016@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.548]
+▶️ Starting checker for znasr4166@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.549]
+▶️ Starting checker for adham.kashkoush1997@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.550]
+▶️ Starting checker for basemhanoura@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.551]
+▶️ Starting checker for ahmed.shetia1986@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.552]
+▶️ Starting checker for shedideslam@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.552]
+▶️ Starting checker for heshamshedid8@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.553]
+▶️ Starting checker for ahmed.saafan19951995@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.553]
+▶️ Starting checker for mahmoud.ahmed20002000@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.554]
+▶️ Starting checker for mohamed.mohamed19911@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.554]
+▶️ Starting checker for mostafa.19981998@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.555]
+▶️ Starting checker for nada.moustafa2000@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.556]
+▶️ Starting checker for redaelkhateib@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.556]
+▶️ Starting checker for leenaly10@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.557]
+▶️ Starting checker for ahmedmahmoudelkasrawy@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.558]
+▶️ Starting checker for mohamedshahin2851992@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.558]
+▶️ Starting checker for tamerbeshirmousa@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.559]
+▶️ Starting checker for elsayedahmed111@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.559]
+▶️ Starting checker for omarmohamedradwan3@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.560]
+▶️ Starting checker for roudiselim04@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.560]
+▶️ Starting checker for shaaban199402@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.561]
+▶️ Starting checker for mahmoudradi216@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.561]
+▶️ Starting checker for walidsomda@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.562]
+▶️ Starting checker for mahmoud.hesham2060@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.562]
+▶️ Starting checker for adamzanaty2018@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.564]
+▶️ Starting checker for hanazanaty2011@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.564]
+▶️ Starting checker for islammohamedmohamed1994@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.565]
+▶️ Starting checker for hossamtaman@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.566]
+▶️ Starting checker for mahmoudd6@outlook.sa (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.566]
+▶️ Starting checker for mo1979979@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.567]
+▶️ Starting checker for yousefkhalaf2006@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.567]
+▶️ Starting checker for alaaelnakoury2@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.568]
+▶️ Starting checker for mohamedmostafait1993@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.568]
+▶️ Starting checker for yousef.italy2004@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.573]
+▶️ Starting checker for mostafaali20062006@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.573]
+▶️ Starting checker for hagartaher.2002@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.574]
+▶️ Starting checker for rashamohamed1974@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.574]
+▶️ Starting checker for ahmedhamoud2344@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.575]
+▶️ Starting checker for asmaa2210mm@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.576]
+▶️ Starting checker for magedelsayed1997@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.576]
+▶️ Starting checker for sara.roma2025@outlook.it (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.577]
+▶️ Starting checker for asil24@outlook.it (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.577]
+▶️ Starting checker for mostafa2567@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.578]
+▶️ Starting checker for rodyazab1@outlook.it (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.579]
+▶️ Starting checker for fahd.roma@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.580]
+▶️ Starting checker for eslam8897@outlook.sa (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.580]
+▶️ Starting checker for mohamed2210hhm@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.581]
+▶️ Starting checker for mennatallahhatem1991@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.581]
+▶️ Starting checker for mohamedelabras30@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.582]
+▶️ Starting checker for alielemam173@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.582]
+▶️ Starting checker for ahmedmady1622000@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.583]
+▶️ Starting checker for elgendy20031@hotmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.584]
+▶️ Starting checker for mostafaabdall45@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.585]
+▶️ Starting checker for mohamedabousoliman856@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.585]
+▶️ Starting checker for lailaelhabiby@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.586]
+▶️ Starting checker for mohamedelgendy2000-2000@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.587]
+▶️ Starting checker for hemaalbrens1111@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.587]
+▶️ Starting checker for mohammedmedhat1515@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.588]
+▶️ Starting checker for fatmasobhy@hostsmartsolution.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.588]
+▶️ Starting checker for ebrahimwardntou@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.589]
+▶️ Starting checker for 000tawfik@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.590]
+▶️ Starting checker for eeskandar936@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.590]
+▶️ Starting checker for moustafa22339@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.591]
+▶️ Starting checker for Hikalmko@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.592]
+▶️ Starting checker for azb73147@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.593]
+▶️ Starting checker for aymantash443@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.593]
+▶️ Starting checker for 00aasaid@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.594]
+▶️ Starting checker for ahmedyyy1234@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.594]
+▶️ Starting checker for maihesham1984@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.595]
+▶️ Starting checker for ahmedelhamy1985@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.595]
+▶️ Starting checker for gana.ahmed@mail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.596]
+▶️ Starting checker for zeina.ahmed@mail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.597]
+▶️ Starting checker for ola.mohamed@mail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.597]
+▶️ Starting checker for omnia.gomaa@mail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.598]
+▶️ Starting checker for kmsmady@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.599]
+▶️ Starting checker for magedmady@gmail.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.599]
+▶️ Starting checker for marina202630@outlook.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.600]
+▶️ Starting checker for nnabilnawar@yahoo.com (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.601]
+▶️ Starting checker for ragiarizk@outlook.sa (IP: null) | Office: Cairo | Visa: Re-entry Visa (D) (4)
+[04:35:03.601]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.602]    🔥 Aggressive Mode: ON
+[04:35:03.603]    💥 Parallel Requests: 1
+[04:35:03.603]    ⏱️  Interval: 300 seconds
+[04:35:03.604]    🚀 Starting request sender...
+[04:35:03.605]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.607]
+🔍 [sakr900800@gmail.com] Sending request #1
+[04:35:03.607]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.608]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.609]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.610]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.611]    🔥 Aggressive Mode: ON
+[04:35:03.612]    💥 Parallel Requests: 1
+[04:35:03.612]    ⏱️  Interval: 300 seconds
+[04:35:03.613]    🚀 Starting request sender...
+[04:35:03.614]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.615]
+🔍 [waleed.mohamed19861986@gmail.com] Sending request #1
+[04:35:03.615]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.616]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.616]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.617]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.617]    🔥 Aggressive Mode: ON
+[04:35:03.618]    💥 Parallel Requests: 1
+[04:35:03.618]    ⏱️  Interval: 300 seconds
+[04:35:03.619]    🚀 Starting request sender...
+[04:35:03.619]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.619]
+🔍 [yaseinsabry.2018@outlook.com] Sending request #1
+[04:35:03.620]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.620]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.621]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.621]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.622]    🔥 Aggressive Mode: ON
+[04:35:03.622]    💥 Parallel Requests: 1
+[04:35:03.623]    ⏱️  Interval: 300 seconds
+[04:35:03.623]    🚀 Starting request sender...
+[04:35:03.624]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.624]
+🔍 [mervatahmed1971@outlook.com] Sending request #1
+[04:35:03.625]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.626]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.628]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.628]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.629]    🔥 Aggressive Mode: ON
+[04:35:03.629]    💥 Parallel Requests: 1
+[04:35:03.630]    ⏱️  Interval: 300 seconds
+[04:35:03.630]    🚀 Starting request sender...
+[04:35:03.631]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.631]
+🔍 [ahmedmohamedelsayed55555@gmail.com] Sending request #1
+[04:35:03.632]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.632]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.633]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.634]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.634]    🔥 Aggressive Mode: ON
+[04:35:03.635]    💥 Parallel Requests: 1
+[04:35:03.635]    ⏱️  Interval: 300 seconds
+[04:35:03.636]    🚀 Starting request sender...
+[04:35:03.636]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.637]
+🔍 [hemdantallat89878@hotmail.com] Sending request #1
+[04:35:03.637]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.638]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.638]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.639]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.640]    🔥 Aggressive Mode: ON
+[04:35:03.642]    💥 Parallel Requests: 1
+[04:35:03.642]    ⏱️  Interval: 300 seconds
+[04:35:03.643]    🚀 Starting request sender...
+[04:35:03.643]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.644]
+🔍 [alihashem456789@gmail.com] Sending request #1
+[04:35:03.644]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.645]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.645]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.646]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.646]    🔥 Aggressive Mode: ON
+[04:35:03.647]    💥 Parallel Requests: 1
+[04:35:03.647]    ⏱️  Interval: 300 seconds
+[04:35:03.648]    🚀 Starting request sender...
+[04:35:03.648]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.648]
+🔍 [alisamir55555@outlook.com] Sending request #1
+[04:35:03.649]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.650]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.650]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.651]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.651]    🔥 Aggressive Mode: ON
+[04:35:03.651]    💥 Parallel Requests: 1
+[04:35:03.652]    ⏱️  Interval: 300 seconds
+[04:35:03.653]    🚀 Starting request sender...
+[04:35:03.654]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.654]
+🔍 [ahmedissam555444@gmail.com] Sending request #1
+[04:35:03.655]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.656]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.656]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.657]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.657]    🔥 Aggressive Mode: ON
+[04:35:03.658]    💥 Parallel Requests: 1
+[04:35:03.659]    ⏱️  Interval: 300 seconds
+[04:35:03.659]    🚀 Starting request sender...
+[04:35:03.660]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.660]
+🔍 [ahmednazmy456789@hotmail.com] Sending request #1
+[04:35:03.662]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.663]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.663]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.664]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.664]    🔥 Aggressive Mode: ON
+[04:35:03.665]    💥 Parallel Requests: 1
+[04:35:03.665]    ⏱️  Interval: 300 seconds
+[04:35:03.666]    🚀 Starting request sender...
+[04:35:03.666]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.667]
+🔍 [adhmalsyd809@gmail.com] Sending request #1
+[04:35:03.668]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.669]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.670]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.670]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.671]    🔥 Aggressive Mode: ON
+[04:35:03.671]    💥 Parallel Requests: 1
+[04:35:03.672]    ⏱️  Interval: 300 seconds
+[04:35:03.672]    🚀 Starting request sender...
+[04:35:03.673]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.673]
+🔍 [elsayedsaadeldin555@hotmail.com] Sending request #1
+[04:35:03.674]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.675]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.676]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.677]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.677]    🔥 Aggressive Mode: ON
+[04:35:03.678]    💥 Parallel Requests: 1
+[04:35:03.678]    ⏱️  Interval: 300 seconds
+[04:35:03.679]    🚀 Starting request sender...
+[04:35:03.679]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.680]
+🔍 [elarabiabdelwahab986@gmail.com] Sending request #1
+[04:35:03.681]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.682]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.683]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.684]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.684]    🔥 Aggressive Mode: ON
+[04:35:03.685]    💥 Parallel Requests: 1
+[04:35:03.685]    ⏱️  Interval: 300 seconds
+[04:35:03.686]    🚀 Starting request sender...
+[04:35:03.687]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.687]
+🔍 [abdallamohamed444445@gmail.com] Sending request #1
+[04:35:03.688]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.689]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.690]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.690]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.691]    🔥 Aggressive Mode: ON
+[04:35:03.691]    💥 Parallel Requests: 1
+[04:35:03.692]    ⏱️  Interval: 300 seconds
+[04:35:03.692]    🚀 Starting request sender...
+[04:35:03.693]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.693]
+🔍 [hanaagamal666698@outlook.com] Sending request #1
+[04:35:03.694]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.695]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.696]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.697]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.697]    🔥 Aggressive Mode: ON
+[04:35:03.698]    💥 Parallel Requests: 1
+[04:35:03.699]    ⏱️  Interval: 300 seconds
+[04:35:03.699]    🚀 Starting request sender...
+[04:35:03.699]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.700]
+🔍 [mohamedmahmoud5558@hotmail.com] Sending request #1
+[04:35:03.701]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.702]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.703]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.704]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.705]    🔥 Aggressive Mode: ON
+[04:35:03.705]    💥 Parallel Requests: 1
+[04:35:03.706]    ⏱️  Interval: 300 seconds
+[04:35:03.706]    🚀 Starting request sender...
+[04:35:03.707]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.707]
+🔍 [aymanwagih555@gmail.com] Sending request #1
+[04:35:03.708]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.708]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.709]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.710]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.711]    🔥 Aggressive Mode: ON
+[04:35:03.712]    💥 Parallel Requests: 1
+[04:35:03.712]    ⏱️  Interval: 300 seconds
+[04:35:03.712]    🚀 Starting request sender...
+[04:35:03.713]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.713]
+🔍 [rabie20042004@gmail.com] Sending request #1
+[04:35:03.714]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.714]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.715]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.715]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.716]    🔥 Aggressive Mode: ON
+[04:35:03.716]    💥 Parallel Requests: 1
+[04:35:03.717]    ⏱️  Interval: 300 seconds
+[04:35:03.717]    🚀 Starting request sender...
+[04:35:03.717]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.718]
+🔍 [rawanahmed.2003@outlook.com] Sending request #1
+[04:35:03.718]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.719]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.719]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.720]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.720]    🔥 Aggressive Mode: ON
+[04:35:03.721]    💥 Parallel Requests: 1
+[04:35:03.723]    ⏱️  Interval: 300 seconds
+[04:35:03.725]    🚀 Starting request sender...
+[04:35:03.726]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.727]
+🔍 [seifeldin.saadeldin@hotmail.com] Sending request #1
+[04:35:03.727]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.728]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.731]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.732]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.733]    🔥 Aggressive Mode: ON
+[04:35:03.733]    💥 Parallel Requests: 1
+[04:35:03.734]    ⏱️  Interval: 300 seconds
+[04:35:03.735]    🚀 Starting request sender...
+[04:35:03.738]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.740]
+🔍 [ahmed.dawoud@mail.com] Sending request #1
+[04:35:03.743]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.746]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.747]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.747]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.750]    🔥 Aggressive Mode: ON
+[04:35:03.752]    💥 Parallel Requests: 1
+[04:35:03.753]    ⏱️  Interval: 300 seconds
+[04:35:03.754]    🚀 Starting request sender...
+[04:35:03.755]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.755]
+🔍 [mohamedsabry.2014@outlook.com] Sending request #1
+[04:35:03.756]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.756]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.757]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.759]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.760]    🔥 Aggressive Mode: ON
+[04:35:03.760]    💥 Parallel Requests: 1
+[04:35:03.761]    ⏱️  Interval: 300 seconds
+[04:35:03.762]    🚀 Starting request sender...
+[04:35:03.762]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.762]
+🔍 [shaimaaismaeil.1989@outlook.com] Sending request #1
+[04:35:03.763]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.764]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.765]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.766]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.767]    🔥 Aggressive Mode: ON
+[04:35:03.768]    💥 Parallel Requests: 1
+[04:35:03.768]    ⏱️  Interval: 300 seconds
+[04:35:03.768]    🚀 Starting request sender...
+[04:35:03.769]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.769]
+🔍 [salmasabry.2016@outlook.com] Sending request #1
+[04:35:03.770]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.770]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.771]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.771]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.772]    🔥 Aggressive Mode: ON
+[04:35:03.772]    💥 Parallel Requests: 1
+[04:35:03.773]    ⏱️  Interval: 300 seconds
+[04:35:03.773]    🚀 Starting request sender...
+[04:35:03.774]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.774]
+🔍 [znasr4166@gmail.com] Sending request #1
+[04:35:03.774]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.775]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.775]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.776]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.776]    🔥 Aggressive Mode: ON
+[04:35:03.777]    💥 Parallel Requests: 1
+[04:35:03.778]    ⏱️  Interval: 300 seconds
+[04:35:03.778]    🚀 Starting request sender...
+[04:35:03.779]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.780]
+🔍 [adham.kashkoush1997@outlook.com] Sending request #1
+[04:35:03.780]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.781]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.782]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.782]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.783]    🔥 Aggressive Mode: ON
+[04:35:03.783]    💥 Parallel Requests: 1
+[04:35:03.784]    ⏱️  Interval: 300 seconds
+[04:35:03.784]    🚀 Starting request sender...
+[04:35:03.785]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.785]
+🔍 [basemhanoura@gmail.com] Sending request #1
+[04:35:03.786]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.786]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.787]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.787]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.788]    🔥 Aggressive Mode: ON
+[04:35:03.788]    💥 Parallel Requests: 1
+[04:35:03.789]    ⏱️  Interval: 300 seconds
+[04:35:03.790]    🚀 Starting request sender...
+[04:35:03.790]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.791]
+🔍 [ahmed.shetia1986@outlook.com] Sending request #1
+[04:35:03.792]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.793]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.794]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.795]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.796]    🔥 Aggressive Mode: ON
+[04:35:03.796]    💥 Parallel Requests: 1
+[04:35:03.797]    ⏱️  Interval: 300 seconds
+[04:35:03.797]    🚀 Starting request sender...
+[04:35:03.798]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.798]
+🔍 [shedideslam@gmail.com] Sending request #1
+[04:35:03.798]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.799]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.799]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.800]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.800]    🔥 Aggressive Mode: ON
+[04:35:03.801]    💥 Parallel Requests: 1
+[04:35:03.802]    ⏱️  Interval: 300 seconds
+[04:35:03.802]    🚀 Starting request sender...
+[04:35:03.803]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.803]
+🔍 [heshamshedid8@gmail.com] Sending request #1
+[04:35:03.804]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.805]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.805]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.806]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.808]    🔥 Aggressive Mode: ON
+[04:35:03.808]    💥 Parallel Requests: 1
+[04:35:03.809]    ⏱️  Interval: 300 seconds
+[04:35:03.810]    🚀 Starting request sender...
+[04:35:03.810]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.811]
+🔍 [ahmed.saafan19951995@outlook.com] Sending request #1
+[04:35:03.811]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.812]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.812]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.813]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.813]    🔥 Aggressive Mode: ON
+[04:35:03.814]    💥 Parallel Requests: 1
+[04:35:03.814]    ⏱️  Interval: 300 seconds
+[04:35:03.815]    🚀 Starting request sender...
+[04:35:03.815]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.816]
+🔍 [mahmoud.ahmed20002000@outlook.com] Sending request #1
+[04:35:03.816]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.817]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.817]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.818]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.819]    🔥 Aggressive Mode: ON
+[04:35:03.819]    💥 Parallel Requests: 1
+[04:35:03.820]    ⏱️  Interval: 300 seconds
+[04:35:03.821]    🚀 Starting request sender...
+[04:35:03.821]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.822]
+🔍 [mohamed.mohamed19911@outlook.com] Sending request #1
+[04:35:03.823]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.824]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.825]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.825]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.826]    🔥 Aggressive Mode: ON
+[04:35:03.826]    💥 Parallel Requests: 1
+[04:35:03.826]    ⏱️  Interval: 300 seconds
+[04:35:03.827]    🚀 Starting request sender...
+[04:35:03.827]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.828]
+🔍 [mostafa.19981998@outlook.com] Sending request #1
+[04:35:03.828]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.829]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.829]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.830]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.830]    🔥 Aggressive Mode: ON
+[04:35:03.831]    💥 Parallel Requests: 1
+[04:35:03.831]    ⏱️  Interval: 300 seconds
+[04:35:03.832]    🚀 Starting request sender...
+[04:35:03.833]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.836]
+🔍 [nada.moustafa2000@outlook.com] Sending request #1
+[04:35:03.837]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.838]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.839]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.841]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.843]    🔥 Aggressive Mode: ON
+[04:35:03.844]    💥 Parallel Requests: 1
+[04:35:03.845]    ⏱️  Interval: 300 seconds
+[04:35:03.848]    🚀 Starting request sender...
+[04:35:03.850]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.851]
+🔍 [redaelkhateib@outlook.com] Sending request #1
+[04:35:03.852]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.853]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.854]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.855]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.857]    🔥 Aggressive Mode: ON
+[04:35:03.857]    💥 Parallel Requests: 1
+[04:35:03.858]    ⏱️  Interval: 300 seconds
+[04:35:03.859]    🚀 Starting request sender...
+[04:35:03.861]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.863]
+🔍 [leenaly10@outlook.com] Sending request #1
+[04:35:03.864]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.866]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.867]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.867]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.868]    🔥 Aggressive Mode: ON
+[04:35:03.870]    💥 Parallel Requests: 1
+[04:35:03.872]    ⏱️  Interval: 300 seconds
+[04:35:03.874]    🚀 Starting request sender...
+[04:35:03.876]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.877]
+🔍 [ahmedmahmoudelkasrawy@gmail.com] Sending request #1
+[04:35:03.878]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.879]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.879]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.880]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.880]    🔥 Aggressive Mode: ON
+[04:35:03.881]    💥 Parallel Requests: 1
+[04:35:03.881]    ⏱️  Interval: 300 seconds
+[04:35:03.882]    🚀 Starting request sender...
+[04:35:03.882]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.883]
+🔍 [mohamedshahin2851992@gmail.com] Sending request #1
+[04:35:03.883]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.883]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.884]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.884]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.885]    🔥 Aggressive Mode: ON
+[04:35:03.885]    💥 Parallel Requests: 1
+[04:35:03.886]    ⏱️  Interval: 300 seconds
+[04:35:03.886]    🚀 Starting request sender...
+[04:35:03.887]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.887]
+🔍 [tamerbeshirmousa@gmail.com] Sending request #1
+[04:35:03.888]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.888]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.890]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.890]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.891]    🔥 Aggressive Mode: ON
+[04:35:03.892]    💥 Parallel Requests: 1
+[04:35:03.892]    ⏱️  Interval: 300 seconds
+[04:35:03.893]    🚀 Starting request sender...
+[04:35:03.893]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.894]
+🔍 [elsayedahmed111@outlook.com] Sending request #1
+[04:35:03.894]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.895]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.896]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.897]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.899]    🔥 Aggressive Mode: ON
+[04:35:03.899]    💥 Parallel Requests: 1
+[04:35:03.900]    ⏱️  Interval: 300 seconds
+[04:35:03.900]    🚀 Starting request sender...
+[04:35:03.901]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.901]
+🔍 [omarmohamedradwan3@gmail.com] Sending request #1
+[04:35:03.902]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.902]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.902]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.903]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.903]    🔥 Aggressive Mode: ON
+[04:35:03.904]    💥 Parallel Requests: 1
+[04:35:03.904]    ⏱️  Interval: 300 seconds
+[04:35:03.905]    🚀 Starting request sender...
+[04:35:03.905]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.906]
+🔍 [roudiselim04@gmail.com] Sending request #1
+[04:35:03.906]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.907]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.907]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.908]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.908]    🔥 Aggressive Mode: ON
+[04:35:03.909]    💥 Parallel Requests: 1
+[04:35:03.910]    ⏱️  Interval: 300 seconds
+[04:35:03.910]    🚀 Starting request sender...
+[04:35:03.912]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.912]
+🔍 [shaaban199402@outlook.com] Sending request #1
+[04:35:03.913]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.914]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.914]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.915]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.915]    🔥 Aggressive Mode: ON
+[04:35:03.916]    💥 Parallel Requests: 1
+[04:35:03.917]    ⏱️  Interval: 300 seconds
+[04:35:03.918]    🚀 Starting request sender...
+[04:35:03.918]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.919]
+🔍 [mahmoudradi216@gmail.com] Sending request #1
+[04:35:03.920]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.920]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.921]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.921]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.922]    🔥 Aggressive Mode: ON
+[04:35:03.922]    💥 Parallel Requests: 1
+[04:35:03.923]    ⏱️  Interval: 300 seconds
+[04:35:03.923]    🚀 Starting request sender...
+[04:35:03.924]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.925]
+🔍 [walidsomda@gmail.com] Sending request #1
+[04:35:03.926]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.926]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.927]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.928]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.928]    🔥 Aggressive Mode: ON
+[04:35:03.929]    💥 Parallel Requests: 1
+[04:35:03.929]    ⏱️  Interval: 300 seconds
+[04:35:03.930]    🚀 Starting request sender...
+[04:35:03.931]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.932]
+🔍 [mahmoud.hesham2060@outlook.com] Sending request #1
+[04:35:03.933]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.933]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.934]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.935]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.935]    🔥 Aggressive Mode: ON
+[04:35:03.936]    💥 Parallel Requests: 1
+[04:35:03.936]    ⏱️  Interval: 300 seconds
+[04:35:03.937]    🚀 Starting request sender...
+[04:35:03.938]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.938]
+🔍 [adamzanaty2018@outlook.com] Sending request #1
+[04:35:03.939]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.940]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.940]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.941]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.941]    🔥 Aggressive Mode: ON
+[04:35:03.942]    💥 Parallel Requests: 1
+[04:35:03.942]    ⏱️  Interval: 300 seconds
+[04:35:03.944]    🚀 Starting request sender...
+[04:35:03.945]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.947]
+🔍 [hanazanaty2011@outlook.com] Sending request #1
+[04:35:03.948]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.952]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.952]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.954]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.955]    🔥 Aggressive Mode: ON
+[04:35:03.955]    💥 Parallel Requests: 1
+[04:35:03.957]    ⏱️  Interval: 300 seconds
+[04:35:03.958]    🚀 Starting request sender...
+[04:35:03.959]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.960]
+🔍 [islammohamedmohamed1994@outlook.com] Sending request #1
+[04:35:03.961]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.962]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.963]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.964]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.964]    🔥 Aggressive Mode: ON
+[04:35:03.966]    💥 Parallel Requests: 1
+[04:35:03.967]    ⏱️  Interval: 300 seconds
+[04:35:03.968]    🚀 Starting request sender...
+[04:35:03.969]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.970]
+🔍 [hossamtaman@outlook.com] Sending request #1
+[04:35:03.972]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.973]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.974]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.976]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.977]    🔥 Aggressive Mode: ON
+[04:35:03.977]    💥 Parallel Requests: 1
+[04:35:03.978]    ⏱️  Interval: 300 seconds
+[04:35:03.978]    🚀 Starting request sender...
+[04:35:03.979]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.980]
+🔍 [mahmoudd6@outlook.sa] Sending request #1
+[04:35:03.981]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.982]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.983]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.985]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.987]    🔥 Aggressive Mode: ON
+[04:35:03.987]    💥 Parallel Requests: 1
+[04:35:03.988]    ⏱️  Interval: 300 seconds
+[04:35:03.990]    🚀 Starting request sender...
+[04:35:03.990]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.992]
+🔍 [mo1979979@outlook.com] Sending request #1
+[04:35:03.994]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:03.994]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:03.995]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:03.996]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:03.996]    🔥 Aggressive Mode: ON
+[04:35:03.997]    💥 Parallel Requests: 1
+[04:35:03.997]    ⏱️  Interval: 300 seconds
+[04:35:03.998]    🚀 Starting request sender...
+[04:35:03.998]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:03.999]
+🔍 [yousefkhalaf2006@outlook.com] Sending request #1
+[04:35:03.999]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.000]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.001]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.002]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.003]    🔥 Aggressive Mode: ON
+[04:35:04.003]    💥 Parallel Requests: 1
+[04:35:04.004]    ⏱️  Interval: 300 seconds
+[04:35:04.004]    🚀 Starting request sender...
+[04:35:04.005]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.005]
+🔍 [alaaelnakoury2@gmail.com] Sending request #1
+[04:35:04.006]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.007]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.007]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.008]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.008]    🔥 Aggressive Mode: ON
+[04:35:04.009]    💥 Parallel Requests: 1
+[04:35:04.009]    ⏱️  Interval: 300 seconds
+[04:35:04.010]    🚀 Starting request sender...
+[04:35:04.010]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.011]
+🔍 [mohamedmostafait1993@gmail.com] Sending request #1
+[04:35:04.011]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.012]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.012]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.013]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.014]    🔥 Aggressive Mode: ON
+[04:35:04.014]    💥 Parallel Requests: 1
+[04:35:04.015]    ⏱️  Interval: 300 seconds
+[04:35:04.016]    🚀 Starting request sender...
+[04:35:04.017]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.018]
+🔍 [yousef.italy2004@gmail.com] Sending request #1
+[04:35:04.018]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.019]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.019]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.020]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.020]    🔥 Aggressive Mode: ON
+[04:35:04.021]    💥 Parallel Requests: 1
+[04:35:04.021]    ⏱️  Interval: 300 seconds
+[04:35:04.022]    🚀 Starting request sender...
+[04:35:04.022]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.023]
+🔍 [mostafaali20062006@outlook.com] Sending request #1
+[04:35:04.023]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.024]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.024]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.025]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.025]    🔥 Aggressive Mode: ON
+[04:35:04.026]    💥 Parallel Requests: 1
+[04:35:04.026]    ⏱️  Interval: 300 seconds
+[04:35:04.027]    🚀 Starting request sender...
+[04:35:04.027]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.028]
+🔍 [hagartaher.2002@gmail.com] Sending request #1
+[04:35:04.028]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.029]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.030]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.031]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.032]    🔥 Aggressive Mode: ON
+[04:35:04.032]    💥 Parallel Requests: 1
+[04:35:04.033]    ⏱️  Interval: 300 seconds
+[04:35:04.033]    🚀 Starting request sender...
+[04:35:04.034]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.034]
+🔍 [rashamohamed1974@outlook.com] Sending request #1
+[04:35:04.035]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.035]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.036]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.036]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.037]    🔥 Aggressive Mode: ON
+[04:35:04.038]    💥 Parallel Requests: 1
+[04:35:04.038]    ⏱️  Interval: 300 seconds
+[04:35:04.039]    🚀 Starting request sender...
+[04:35:04.039]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.040]
+🔍 [ahmedhamoud2344@gmail.com] Sending request #1
+[04:35:04.041]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.041]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.042]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.043]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.044]    🔥 Aggressive Mode: ON
+[04:35:04.045]    💥 Parallel Requests: 1
+[04:35:04.045]    ⏱️  Interval: 300 seconds
+[04:35:04.046]    🚀 Starting request sender...
+[04:35:04.046]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.047]
+🔍 [asmaa2210mm@gmail.com] Sending request #1
+[04:35:04.047]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.048]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.048]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.049]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.049]    🔥 Aggressive Mode: ON
+[04:35:04.050]    💥 Parallel Requests: 1
+[04:35:04.050]    ⏱️  Interval: 300 seconds
+[04:35:04.051]    🚀 Starting request sender...
+[04:35:04.051]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.052]
+🔍 [magedelsayed1997@outlook.com] Sending request #1
+[04:35:04.053]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.055]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.057]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.059]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.061]    🔥 Aggressive Mode: ON
+[04:35:04.062]    💥 Parallel Requests: 1
+[04:35:04.063]    ⏱️  Interval: 300 seconds
+[04:35:04.063]    🚀 Starting request sender...
+[04:35:04.064]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.064]
+🔍 [sara.roma2025@outlook.it] Sending request #1
+[04:35:04.065]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.065]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.066]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.066]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.067]    🔥 Aggressive Mode: ON
+[04:35:04.067]    💥 Parallel Requests: 1
+[04:35:04.068]    ⏱️  Interval: 300 seconds
+[04:35:04.069]    🚀 Starting request sender...
+[04:35:04.070]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.072]
+🔍 [asil24@outlook.it] Sending request #1
+[04:35:04.073]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.074]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.074]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.075]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.075]    🔥 Aggressive Mode: ON
+[04:35:04.076]    💥 Parallel Requests: 1
+[04:35:04.078]    ⏱️  Interval: 300 seconds
+[04:35:04.080]    🚀 Starting request sender...
+[04:35:04.081]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.083]
+🔍 [mostafa2567@outlook.com] Sending request #1
+[04:35:04.085]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.087]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.088]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.088]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.089]    🔥 Aggressive Mode: ON
+[04:35:04.089]    💥 Parallel Requests: 1
+[04:35:04.090]    ⏱️  Interval: 300 seconds
+[04:35:04.090]    🚀 Starting request sender...
+[04:35:04.090]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.091]
+🔍 [rodyazab1@outlook.it] Sending request #1
+[04:35:04.092]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.093]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.094]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.095]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.095]    🔥 Aggressive Mode: ON
+[04:35:04.096]    💥 Parallel Requests: 1
+[04:35:04.096]    ⏱️  Interval: 300 seconds
+[04:35:04.097]    🚀 Starting request sender...
+[04:35:04.098]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.099]
+🔍 [fahd.roma@outlook.com] Sending request #1
+[04:35:04.101]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.102]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.102]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.103]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.103]    🔥 Aggressive Mode: ON
+[04:35:04.103]    💥 Parallel Requests: 1
+[04:35:04.104]    ⏱️  Interval: 300 seconds
+[04:35:04.104]    🚀 Starting request sender...
+[04:35:04.105]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.105]
+🔍 [eslam8897@outlook.sa] Sending request #1
+[04:35:04.106]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.106]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.107]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.107]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.108]    🔥 Aggressive Mode: ON
+[04:35:04.108]    💥 Parallel Requests: 1
+[04:35:04.109]    ⏱️  Interval: 300 seconds
+[04:35:04.109]    🚀 Starting request sender...
+[04:35:04.110]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.110]
+🔍 [mohamed2210hhm@gmail.com] Sending request #1
+[04:35:04.111]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.112]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.113]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.114]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.114]    🔥 Aggressive Mode: ON
+[04:35:04.115]    💥 Parallel Requests: 1
+[04:35:04.115]    ⏱️  Interval: 300 seconds
+[04:35:04.116]    🚀 Starting request sender...
+[04:35:04.116]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.117]
+🔍 [mennatallahhatem1991@outlook.com] Sending request #1
+[04:35:04.118]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.118]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.119]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.120]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.121]    🔥 Aggressive Mode: ON
+[04:35:04.122]    💥 Parallel Requests: 1
+[04:35:04.122]    ⏱️  Interval: 300 seconds
+[04:35:04.122]    🚀 Starting request sender...
+[04:35:04.123]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.123]
+🔍 [mohamedelabras30@gmail.com] Sending request #1
+[04:35:04.124]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.124]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.125]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.125]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.126]    🔥 Aggressive Mode: ON
+[04:35:04.126]    💥 Parallel Requests: 1
+[04:35:04.127]    ⏱️  Interval: 300 seconds
+[04:35:04.127]    🚀 Starting request sender...
+[04:35:04.128]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.128]
+🔍 [alielemam173@gmail.com] Sending request #1
+[04:35:04.129]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.129]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.136]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.138]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.138]    🔥 Aggressive Mode: ON
+[04:35:04.139]    💥 Parallel Requests: 1
+[04:35:04.139]    ⏱️  Interval: 300 seconds
+[04:35:04.140]    🚀 Starting request sender...
+[04:35:04.140]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.141]
+🔍 [ahmedmady1622000@gmail.com] Sending request #1
+[04:35:04.141]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.142]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.142]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.143]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.143]    🔥 Aggressive Mode: ON
+[04:35:04.144]    💥 Parallel Requests: 1
+[04:35:04.144]    ⏱️  Interval: 300 seconds
+[04:35:04.145]    🚀 Starting request sender...
+[04:35:04.146]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.147]
+🔍 [elgendy20031@hotmail.com] Sending request #1
+[04:35:04.147]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.149]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.150]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.150]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.151]    🔥 Aggressive Mode: ON
+[04:35:04.151]    💥 Parallel Requests: 1
+[04:35:04.151]    ⏱️  Interval: 300 seconds
+[04:35:04.152]    🚀 Starting request sender...
+[04:35:04.152]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.153]
+🔍 [mostafaabdall45@gmail.com] Sending request #1
+[04:35:04.153]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.154]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.154]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.155]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.155]    🔥 Aggressive Mode: ON
+[04:35:04.156]    💥 Parallel Requests: 1
+[04:35:04.156]    ⏱️  Interval: 300 seconds
+[04:35:04.157]    🚀 Starting request sender...
+[04:35:04.157]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.157]
+🔍 [mohamedabousoliman856@gmail.com] Sending request #1
+[04:35:04.158]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.159]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.159]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.160]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.162]    🔥 Aggressive Mode: ON
+[04:35:04.163]    💥 Parallel Requests: 1
+[04:35:04.163]    ⏱️  Interval: 300 seconds
+[04:35:04.165]    🚀 Starting request sender...
+[04:35:04.167]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.168]
+🔍 [lailaelhabiby@outlook.com] Sending request #1
+[04:35:04.169]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.170]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.171]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.172]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.174]    🔥 Aggressive Mode: ON
+[04:35:04.177]    💥 Parallel Requests: 1
+[04:35:04.178]    ⏱️  Interval: 300 seconds
+[04:35:04.178]    🚀 Starting request sender...
+[04:35:04.180]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.182]
+🔍 [mohamedelgendy2000-2000@outlook.com] Sending request #1
+[04:35:04.184]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.185]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.186]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.189]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.190]    🔥 Aggressive Mode: ON
+[04:35:04.191]    💥 Parallel Requests: 1
+[04:35:04.191]    ⏱️  Interval: 300 seconds
+[04:35:04.195]    🚀 Starting request sender...
+[04:35:04.197]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.198]
+🔍 [hemaalbrens1111@gmail.com] Sending request #1
+[04:35:04.199]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.200]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.202]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.203]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.204]    🔥 Aggressive Mode: ON
+[04:35:04.205]    💥 Parallel Requests: 1
+[04:35:04.207]    ⏱️  Interval: 300 seconds
+[04:35:04.208]    🚀 Starting request sender...
+[04:35:04.208]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.209]
+🔍 [mohammedmedhat1515@gmail.com] Sending request #1
+[04:35:04.209]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.210]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.210]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.211]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.211]    🔥 Aggressive Mode: ON
+[04:35:04.212]    💥 Parallel Requests: 1
+[04:35:04.212]    ⏱️  Interval: 300 seconds
+[04:35:04.213]    🚀 Starting request sender...
+[04:35:04.213]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.214]
+🔍 [fatmasobhy@hostsmartsolution.com] Sending request #1
+[04:35:04.214]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.215]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.216]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.217]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.218]    🔥 Aggressive Mode: ON
+[04:35:04.218]    💥 Parallel Requests: 1
+[04:35:04.219]    ⏱️  Interval: 300 seconds
+[04:35:04.219]    🚀 Starting request sender...
+[04:35:04.220]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.220]
+🔍 [ebrahimwardntou@outlook.com] Sending request #1
+[04:35:04.221]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.221]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.222]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.223]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.224]    🔥 Aggressive Mode: ON
+[04:35:04.225]    💥 Parallel Requests: 1
+[04:35:04.226]    ⏱️  Interval: 300 seconds
+[04:35:04.226]    🚀 Starting request sender...
+[04:35:04.227]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.227]
+🔍 [000tawfik@gmail.com] Sending request #1
+[04:35:04.228]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.228]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.229]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.229]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.230]    🔥 Aggressive Mode: ON
+[04:35:04.230]    💥 Parallel Requests: 1
+[04:35:04.231]    ⏱️  Interval: 300 seconds
+[04:35:04.231]    🚀 Starting request sender...
+[04:35:04.232]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.232]
+🔍 [eeskandar936@gmail.com] Sending request #1
+[04:35:04.233]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.233]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.234]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.234]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.235]    🔥 Aggressive Mode: ON
+[04:35:04.235]    💥 Parallel Requests: 1
+[04:35:04.236]    ⏱️  Interval: 300 seconds
+[04:35:04.236]    🚀 Starting request sender...
+[04:35:04.238]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.239]
+🔍 [moustafa22339@gmail.com] Sending request #1
+[04:35:04.240]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.241]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.241]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.242]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.242]    🔥 Aggressive Mode: ON
+[04:35:04.242]    💥 Parallel Requests: 1
+[04:35:04.243]    ⏱️  Interval: 300 seconds
+[04:35:04.243]    🚀 Starting request sender...
+[04:35:04.244]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.244]
+🔍 [Hikalmko@gmail.com] Sending request #1
+[04:35:04.245]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.245]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.246]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.246]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.247]    🔥 Aggressive Mode: ON
+[04:35:04.247]    💥 Parallel Requests: 1
+[04:35:04.248]    ⏱️  Interval: 300 seconds
+[04:35:04.248]    🚀 Starting request sender...
+[04:35:04.249]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.250]
+🔍 [azb73147@gmail.com] Sending request #1
+[04:35:04.251]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.251]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.253]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.254]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.254]    🔥 Aggressive Mode: ON
+[04:35:04.255]    💥 Parallel Requests: 1
+[04:35:04.255]    ⏱️  Interval: 300 seconds
+[04:35:04.256]    🚀 Starting request sender...
+[04:35:04.256]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.257]
+🔍 [aymantash443@gmail.com] Sending request #1
+[04:35:04.257]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.257]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.258]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.258]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.259]    🔥 Aggressive Mode: ON
+[04:35:04.259]    💥 Parallel Requests: 1
+[04:35:04.260]    ⏱️  Interval: 300 seconds
+[04:35:04.260]    🚀 Starting request sender...
+[04:35:04.261]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.261]
+🔍 [00aasaid@gmail.com] Sending request #1
+[04:35:04.262]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.262]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.263]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.264]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.264]    🔥 Aggressive Mode: ON
+[04:35:04.265]    💥 Parallel Requests: 1
+[04:35:04.266]    ⏱️  Interval: 300 seconds
+[04:35:04.267]    🚀 Starting request sender...
+[04:35:04.267]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.268]
+🔍 [ahmedyyy1234@outlook.com] Sending request #1
+[04:35:04.269]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.269]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.271]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.272]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.273]    🔥 Aggressive Mode: ON
+[04:35:04.274]    💥 Parallel Requests: 1
+[04:35:04.275]    ⏱️  Interval: 300 seconds
+[04:35:04.275]    🚀 Starting request sender...
+[04:35:04.276]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.277]
+🔍 [maihesham1984@outlook.com] Sending request #1
+[04:35:04.278]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.279]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.280]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.281]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.282]    🔥 Aggressive Mode: ON
+[04:35:04.283]    💥 Parallel Requests: 1
+[04:35:04.284]    ⏱️  Interval: 300 seconds
+[04:35:04.285]    🚀 Starting request sender...
+[04:35:04.287]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.288]
+🔍 [ahmedelhamy1985@outlook.com] Sending request #1
+[04:35:04.289]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.289]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.291]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.292]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.292]    🔥 Aggressive Mode: ON
+[04:35:04.293]    💥 Parallel Requests: 1
+[04:35:04.293]    ⏱️  Interval: 300 seconds
+[04:35:04.294]    🚀 Starting request sender...
+[04:35:04.294]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.295]
+🔍 [gana.ahmed@mail.com] Sending request #1
+[04:35:04.295]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.296]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.298]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.300]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.302]    🔥 Aggressive Mode: ON
+[04:35:04.303]    💥 Parallel Requests: 1
+[04:35:04.303]    ⏱️  Interval: 300 seconds
+[04:35:04.303]    🚀 Starting request sender...
+[04:35:04.304]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.304]
+🔍 [zeina.ahmed@mail.com] Sending request #1
+[04:35:04.305]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.305]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.306]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.306]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.307]    🔥 Aggressive Mode: ON
+[04:35:04.307]    💥 Parallel Requests: 1
+[04:35:04.308]    ⏱️  Interval: 300 seconds
+[04:35:04.308]    🚀 Starting request sender...
+[04:35:04.309]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.309]
+🔍 [ola.mohamed@mail.com] Sending request #1
+[04:35:04.310]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.311]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.312]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.312]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.313]    🔥 Aggressive Mode: ON
+[04:35:04.314]    💥 Parallel Requests: 1
+[04:35:04.314]    ⏱️  Interval: 300 seconds
+[04:35:04.315]    🚀 Starting request sender...
+[04:35:04.318]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.318]
+🔍 [omnia.gomaa@mail.com] Sending request #1
+[04:35:04.319]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.320]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.320]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.322]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.322]    🔥 Aggressive Mode: ON
+[04:35:04.323]    💥 Parallel Requests: 1
+[04:35:04.323]    ⏱️  Interval: 300 seconds
+[04:35:04.324]    🚀 Starting request sender...
+[04:35:04.325]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.326]
+🔍 [kmsmady@gmail.com] Sending request #1
+[04:35:04.327]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.328]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.329]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.331]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.332]    🔥 Aggressive Mode: ON
+[04:35:04.333]    💥 Parallel Requests: 1
+[04:35:04.333]    ⏱️  Interval: 300 seconds
+[04:35:04.334]    🚀 Starting request sender...
+[04:35:04.335]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.335]
+🔍 [magedmady@gmail.com] Sending request #1
+[04:35:04.336]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.337]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.337]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.338]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.339]    🔥 Aggressive Mode: ON
+[04:35:04.339]    💥 Parallel Requests: 1
+[04:35:04.340]    ⏱️  Interval: 300 seconds
+[04:35:04.341]    🚀 Starting request sender...
+[04:35:04.342]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.343]
+🔍 [marina202630@outlook.com] Sending request #1
+[04:35:04.344]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.345]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.346]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.346]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.347]    🔥 Aggressive Mode: ON
+[04:35:04.347]    💥 Parallel Requests: 1
+[04:35:04.348]    ⏱️  Interval: 300 seconds
+[04:35:04.349]    🚀 Starting request sender...
+[04:35:04.349]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.350]
+🔍 [nnabilnawar@yahoo.com] Sending request #1
+[04:35:04.351]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.351]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.352]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.353]    🔄 Background token refresh enabled (every 14 minutes)
+[04:35:04.354]    🔥 Aggressive Mode: ON
+[04:35:04.354]    💥 Parallel Requests: 1
+[04:35:04.355]    ⏱️  Interval: 300 seconds
+[04:35:04.355]    🚀 Starting request sender...
+[04:35:04.356]    🔀 Running in PARALLEL mode - multiple concurrent requests
+[04:35:04.357]
+🔍 [ragiarizk@outlook.sa] Sending request #1
+[04:35:04.357]    💥 Aggressive mode: sending 1 parallel requests...
+[04:35:04.359]    ➡️ [CHECK_AVAILABILITY] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:04.360]    🔄 5 min ىتح شيرفير ام لبق ةبرضلا...
+[04:35:04.630]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (992ms)
+[04:35:04.630]       Content-Type: application/json
+[04:35:04.631]       Content-Length: 24
+[04:35:04.633]    ✅ Appointments available! (stopping all other requests now)
+[04:35:04.634]    ✅ Appointment found by Request #1
+[04:35:04.634] 💥 Triggering FORCE TIMEOUT on 1 active requests...
+[04:35:04.635]
+🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+[04:35:04.636] 🎉 FOUND APPOINTMENT AVAILABLE FOR: hemdantallat89878@hotmail.com
+[04:35:04.637] 🛑 All pending requests ABORTED!
+[04:35:04.638] 💥 TCP RST packets sent to server - requests terminated at network level!
+[04:35:04.638] ✅ All requests confirmed stopped!
+[04:35:04.639] 🛑 Total cancelled: 0
+[04:35:04.639] ⏭️ شم كيشتيه ىلع باسحلا هد ينات دحل كييشت ديدج
+[04:35:04.640] 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+
+[04:35:04.640]
+✅✅✅ APPOINTMENT FOUND (via /checks API) ✅✅✅
+[04:35:04.640] 👉 ACTION REQUIRED: Login NOW and book manually!
+[04:35:04.641] 🚨 Don't wait - book immediately!
+[04:35:04.642] ✅ Appointment saved for hemdantallat89878@hotmail.com
+[04:35:04.649]    ⚡⚡⚡ [CHECK_AVAILABILITY] FORCE TIMEOUT triggered - aborting in 1ms
+[04:35:04.784] 🔄 [hemdantallat89878@hotmail.com] Pre-wave refresh (T−10s)...
+[04:35:04.785]    ⏭️ [hemdantallat89878@hotmail.com] شيرفيرتا نم بيرق — مادختسا سفن نكوتلا
+[04:35:04.786]    ✅ Pre-wave refresh ok for hemdantallat89878@hotmail.com
+[04:35:04.787]
+⏳ [hemdantallat89878@hotmail.com] Waiting for 1 remaining requests to complete...
+[04:35:04.787]    ⚡ Appointment found - waiting max 3 seconds for pending requests...
+[04:35:05.022]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1247ms)
+[04:35:05.022]       Content-Type: application/json
+[04:35:05.023]       Content-Length: 24
+[04:35:05.024]    ✅ Appointments available! (stopping all other requests now)
+[04:35:05.025]    ✅ Appointment found by Request #1
+[04:35:05.025] 💥 Triggering FORCE TIMEOUT on 1 active requests...
+[04:35:05.026]
+🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+[04:35:05.027] 🎉 FOUND APPOINTMENT AVAILABLE FOR: znasr4166@gmail.com
+[04:35:05.027] 🛑 All pending requests ABORTED!
+[04:35:05.028] 💥 TCP RST packets sent to server - requests terminated at network level!
+[04:35:05.029] ✅ All requests confirmed stopped!
+[04:35:05.030] 🛑 Total cancelled: 0
+[04:35:05.030] ⏭️ شم كيشتيه ىلع باسحلا هد ينات دحل كييشت ديدج
+[04:35:05.031] 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+
+[04:35:05.031]
+✅✅✅ APPOINTMENT FOUND (via /checks API) ✅✅✅
+[04:35:05.032] 👉 ACTION REQUIRED: Login NOW and book manually!
+[04:35:05.032] 🚨 Don't wait - book immediately!
+[04:35:05.035] ✅ Appointment saved for znasr4166@gmail.com
+[04:35:05.039]    ⚡⚡⚡ [CHECK_AVAILABILITY] FORCE TIMEOUT triggered - aborting in 1ms
+[04:35:05.052]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1420ms)
+[04:35:05.053]       Content-Type: application/json
+[04:35:05.053]       Content-Length: 24
+[04:35:05.054]    ✅ Appointments available! (stopping all other requests now)
+[04:35:05.055]    ✅ Appointment found by Request #1
+[04:35:05.055] 💥 Triggering FORCE TIMEOUT on 1 active requests...
+[04:35:05.056]
+🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+[04:35:05.056] 🎉 FOUND APPOINTMENT AVAILABLE FOR: ahmedmohamedelsayed55555@gmail.com
+[04:35:05.056] 🛑 All pending requests ABORTED!
+[04:35:05.057] 💥 TCP RST packets sent to server - requests terminated at network level!
+[04:35:05.057] ✅ All requests confirmed stopped!
+[04:35:05.058] 🛑 Total cancelled: 0
+[04:35:05.058] ⏭️ شم كيشتيه ىلع باسحلا هد ينات دحل كييشت ديدج
+[04:35:05.059] 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+
+[04:35:05.059]
+✅✅✅ APPOINTMENT FOUND (via /checks API) ✅✅✅
+[04:35:05.060] 👉 ACTION REQUIRED: Login NOW and book manually!
+[04:35:05.061] 🚨 Don't wait - book immediately!
+[04:35:05.062] ✅ Appointment saved for ahmedmohamedelsayed55555@gmail.com
+[04:35:05.067]    ⚡⚡⚡ [CHECK_AVAILABILITY] FORCE TIMEOUT triggered - aborting in 1ms
+[04:35:05.067]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1243ms)
+[04:35:05.068]       Content-Type: application/json
+[04:35:05.068]       Content-Length: 25
+[04:35:05.107]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1412ms)
+[04:35:05.108]       Content-Type: application/json
+[04:35:05.108]       Content-Length: 25
+[04:35:05.133]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1267ms)
+[04:35:05.133]       Content-Type: application/json
+[04:35:05.134]       Content-Length: 25
+[04:35:05.170]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (825ms)
+[04:35:05.170]       Content-Type: application/json
+[04:35:05.171]       Content-Length: 25
+[04:35:05.193] 🔄 [ahmedmohamedelsayed55555@gmail.com] Pre-wave refresh (T−10s)...
+[04:35:05.193]    ⏭️ [ahmedmohamedelsayed55555@gmail.com] شيرفيرتا نم بيرق — مادختسا سفن نكوتلا
+[04:35:05.199]    ✅ Pre-wave refresh ok for ahmedmohamedelsayed55555@gmail.com
+[04:35:05.202]
+⏳ [ahmedmohamedelsayed55555@gmail.com] Waiting for 1 remaining requests to complete...
+[04:35:05.205]    ⚡ Appointment found - waiting max 3 seconds for pending requests...
+[04:35:05.208] 🔄 [znasr4166@gmail.com] Pre-wave refresh (T−10s)...
+[04:35:05.212]    ⏭️ [znasr4166@gmail.com] شيرفيرتا نم بيرق — مادختسا سفن نكوتلا
+[04:35:05.216]    ✅ Pre-wave refresh ok for znasr4166@gmail.com
+[04:35:05.218]
+⏳ [znasr4166@gmail.com] Waiting for 1 remaining requests to complete...
+[04:35:05.223]    ⚡ Appointment found - waiting max 3 seconds for pending requests...
+[04:35:05.228]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1608ms)
+[04:35:05.230]       Content-Type: application/json
+[04:35:05.234]       Content-Length: 25
+[04:35:05.311]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1530ms)
+[04:35:05.313]       Content-Type: application/json
+[04:35:05.314]       Content-Length: 25
+[04:35:05.345]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1600ms)
+[04:35:05.346]       Content-Type: application/json
+[04:35:05.347]       Content-Length: 25
+[04:35:05.430]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1542ms)
+[04:35:05.431]       Content-Type: application/json
+[04:35:05.432]       Content-Length: 25
+[04:35:05.453]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1667ms)
+[04:35:05.454]       Content-Type: application/json
+[04:35:05.455]       Content-Length: 25
+[04:35:05.625]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1980ms)
+[04:35:05.627]       Content-Type: application/json
+[04:35:05.628]       Content-Length: 25
+[04:35:05.761]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1659ms)
+[04:35:05.761]       Content-Type: application/json
+[04:35:05.762]       Content-Length: 25
+[04:35:05.791]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1809ms)
+[04:35:05.793]       Content-Type: application/json
+[04:35:05.794]       Content-Length: 25
+[04:35:05.816]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1520ms)
+[04:35:05.816]       Content-Type: application/json
+[04:35:05.817]       Content-Length: 25
+[04:35:05.842]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1947ms)
+[04:35:05.843]       Content-Type: application/json
+[04:35:05.844]       Content-Length: 25
+[04:35:05.868]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2260ms)
+[04:35:05.868]       Content-Type: application/json
+[04:35:05.869]       Content-Length: 25
+[04:35:05.885]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (1873ms)
+[04:35:05.886]       Content-Type: application/json
+[04:35:05.887]       Content-Length: 25
+[04:35:05.940]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2232ms)
+[04:35:05.940]       Content-Type: application/json
+[04:35:05.941]       Content-Length: 25
+[04:35:06.011]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2361ms)
+[04:35:06.012]       Content-Type: application/json
+[04:35:06.013]       Content-Length: 25
+[04:35:06.036]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2410ms)
+[04:35:06.036]       Content-Type: application/json
+[04:35:06.037]       Content-Length: 25
+[04:35:06.043]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2287ms)
+[04:35:06.044]       Content-Type: application/json
+[04:35:06.045]       Content-Length: 25
+[04:35:06.062]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2387ms)
+[04:35:06.063]       Content-Type: application/json
+[04:35:06.066]       Content-Length: 25
+[04:35:06.135]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2282ms)
+[04:35:06.136]       Content-Type: application/json
+[04:35:06.137]       Content-Length: 25
+[04:35:06.156]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2392ms)
+[04:35:06.157]       Content-Type: application/json
+[04:35:06.157]       Content-Length: 25
+[04:35:06.184]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2470ms)
+[04:35:06.184]       Content-Type: application/json
+[04:35:06.185]       Content-Length: 25
+[04:35:06.236]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2466ms)
+[04:35:06.237]       Content-Type: application/json
+[04:35:06.237]       Content-Length: 25
+[04:35:06.283]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2357ms)
+[04:35:06.285]       Content-Type: application/json
+[04:35:06.288]       Content-Length: 25
+[04:35:06.307]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2645ms)
+[04:35:06.308]       Content-Type: application/json
+[04:35:06.311]       Content-Length: 25
+[04:35:06.333]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2333ms)
+[04:35:06.334]       Content-Type: application/json
+[04:35:06.335]       Content-Length: 25
+[04:35:06.370]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2351ms)
+[04:35:06.371]       Content-Type: application/json
+[04:35:06.371]       Content-Length: 25
+[04:35:06.393]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2674ms)
+[04:35:06.393]       Content-Type: application/json
+[04:35:06.394]       Content-Length: 25
+[04:35:06.425]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2626ms)
+[04:35:06.427]       Content-Type: application/json
+[04:35:06.428]       Content-Length: 25
+[04:35:06.450]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2645ms)
+[04:35:06.451]       Content-Type: application/json
+[04:35:06.452]       Content-Length: 25
+[04:35:06.519]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2464ms)
+[04:35:06.520]       Content-Type: application/json
+[04:35:06.521]       Content-Length: 25
+[04:35:06.524]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2610ms)
+[04:35:06.525]       Content-Type: application/json
+[04:35:06.526]       Content-Length: 25
+[04:35:06.553]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2524ms)
+[04:35:06.554]       Content-Type: application/json
+[04:35:06.555]       Content-Length: 25
+[04:35:06.578]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2408ms)
+[04:35:06.578]       Content-Type: application/json
+[04:35:06.579]       Content-Length: 25
+[04:35:06.618]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2390ms)
+[04:35:06.618]       Content-Type: application/json
+[04:35:06.619]       Content-Length: 25
+[04:35:06.654]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2771ms)
+[04:35:06.655]       Content-Type: application/json
+[04:35:06.656]       Content-Length: 25
+[04:35:06.700]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2665ms)
+[04:35:06.700]       Content-Type: application/json
+[04:35:06.701]       Content-Length: 25
+[04:35:06.721]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2781ms)
+[04:35:06.721]       Content-Type: application/json
+[04:35:06.722]       Content-Length: 25
+[04:35:06.739]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2698ms)
+[04:35:06.740]       Content-Type: application/json
+[04:35:06.741]       Content-Length: 25
+[04:35:06.763]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2501ms)
+[04:35:06.766]       Content-Type: application/json
+[04:35:06.766]       Content-Length: 25
+[04:35:06.829]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (2717ms)
+[04:35:06.830]       Content-Type: application/json
+[04:35:06.831]       Content-Length: 25
+⚠️ WhatsApp client not connected — notification NOT sent
+📱 Telegram notifications are disabled
+[04:35:07.288]    ✅ Stopped waiting for remaining requests
+[04:35:07.289]
+⏹️ [znasr4166@gmail.com] Checker stopped
+[04:35:07.290]    📊 Total requests sent: 1
+[04:35:07.290]    ✅ Appointment found!
+[04:35:07.291]    🧹 Background token refresh timer stopped
+[04:35:07.295]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3289ms)
+[04:35:07.295]       Content-Type: application/json
+[04:35:07.296]       Content-Length: 25
+[04:35:07.297]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3179ms)
+[04:35:07.297]       Content-Type: application/json
+[04:35:07.298]       Content-Length: 25
+⚠️ WhatsApp client not connected — notification NOT sent
+📱 Telegram notifications are disabled
+[04:35:07.303]    ✅ Stopped waiting for remaining requests
+[04:35:07.303]
+⏹️ [ahmedmohamedelsayed55555@gmail.com] Checker stopped
+[04:35:07.304]    📊 Total requests sent: 1
+[04:35:07.304]    ✅ Appointment found!
+[04:35:07.305]    🧹 Background token refresh timer stopped
+[04:35:07.306]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3344ms)
+[04:35:07.306]       Content-Type: application/json
+[04:35:07.306]       Content-Length: 25
+[04:35:07.307]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3400ms)
+[04:35:07.308]       Content-Type: application/json
+[04:35:07.308]       Content-Length: 25
+[04:35:07.309]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3040ms)
+[04:35:07.309]       Content-Type: application/json
+[04:35:07.310]       Content-Length: 25
+[04:35:07.310]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3377ms)
+[04:35:07.311]       Content-Type: application/json
+[04:35:07.311]       Content-Length: 25
+[04:35:07.313]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3034ms)
+[04:35:07.314]       Content-Type: application/json
+[04:35:07.315]       Content-Length: 25
+[04:35:07.316]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3187ms)
+[04:35:07.316]       Content-Type: application/json
+[04:35:07.316]       Content-Length: 25
+[04:35:07.321]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3088ms)
+[04:35:07.322]       Content-Type: application/json
+[04:35:07.323]       Content-Length: 25
+[04:35:07.323]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3371ms)
+[04:35:07.324]       Content-Type: application/json
+[04:35:07.324]       Content-Length: 25
+[04:35:07.326]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3239ms)
+[04:35:07.326]       Content-Type: application/json
+[04:35:07.327]       Content-Length: 25
+[04:35:07.351]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3023ms)
+[04:35:07.351]       Content-Type: application/json
+[04:35:07.352]       Content-Length: 25
+[04:35:07.374]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3692ms)
+[04:35:07.375]       Content-Type: application/json
+[04:35:07.375]       Content-Length: 25
+[04:35:07.392]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3041ms)
+[04:35:07.393]       Content-Type: application/json
+[04:35:07.393]       Content-Length: 25
+[04:35:07.444]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3085ms)
+[04:35:07.448]       Content-Type: application/json
+[04:35:07.451]       Content-Length: 25
+[04:35:07.495]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3341ms)
+[04:35:07.496]       Content-Type: application/json
+[04:35:07.497]       Content-Length: 25
+[04:35:07.601]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3391ms)
+[04:35:07.602]       Content-Type: application/json
+[04:35:07.603]       Content-Length: 25
+[04:35:07.800]    ✅ Stopped waiting for remaining requests
+[04:35:07.801]
+⏹️ [hemdantallat89878@hotmail.com] Checker stopped
+[04:35:07.801]    📊 Total requests sent: 1
+[04:35:07.802]    ✅ Appointment found!
+[04:35:07.803]    🧹 Background token refresh timer stopped
+[04:35:07.856]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3791ms)
+[04:35:07.857]       Content-Type: application/json
+[04:35:07.857]       Content-Length: 25
+[04:35:07.884]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3760ms)
+[04:35:07.885]       Content-Type: application/json
+[04:35:07.885]       Content-Length: 25
+⚠️ WhatsApp client not connected — notification NOT sent
+📱 Telegram notifications are disabled
+[04:35:07.991]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3680ms)
+[04:35:07.993]       Content-Type: application/json
+[04:35:07.997]       Content-Length: 25
+[04:35:08.015]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4042ms)
+[04:35:08.019]       Content-Type: application/json
+[04:35:08.020]       Content-Length: 25
+[04:35:08.097]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4103ms)
+[04:35:08.098]       Content-Type: application/json
+[04:35:08.099]       Content-Length: 25
+[04:35:08.149]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3892ms)
+[04:35:08.150]       Content-Type: application/json
+[04:35:08.151]       Content-Length: 25
+[04:35:08.172]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (3883ms)
+[04:35:08.174]       Content-Type: application/json
+[04:35:08.175]       Content-Length: 25
+[04:35:08.312]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4474ms)
+[04:35:08.313]       Content-Type: application/json
+[04:35:08.314]       Content-Length: 25
+[04:35:08.319]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4663ms)
+[04:35:08.320]       Content-Type: application/json
+[04:35:08.320]       Content-Length: 25
+[04:35:08.335]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4114ms)
+[04:35:08.335]       Content-Type: application/json
+[04:35:08.336]       Content-Length: 25
+[04:35:08.344]    ⬅️ [CHECK_AVAILABILITY] Status: 401 Unauthorized (4024ms)
+[04:35:08.345]       Content-Type: unknown
+[04:35:08.345]       Content-Length: 0
+[04:35:08.346]    ⚡ Soft 401 (token still ~894s) — retry 1/1, NO refresh
+[04:35:08.346]    ➡️ [CHECK_AVAILABILITY_SOFT401_RETRY1] GET https://egyapi.almaviva-visa.it/reservation-manager/api/planning/v1/checks?officeId=1&visaId=4&serviceLevelId=1
+[04:35:08.349]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4325ms)
+[04:35:08.349]       Content-Type: application/json
+[04:35:08.350]       Content-Length: 25
+[04:35:08.372]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4067ms)
+[04:35:08.373]       Content-Type: application/json
+[04:35:08.373]       Content-Length: 25
+[04:35:08.387]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4685ms)
+[04:35:08.387]       Content-Type: application/json
+[04:35:08.388]       Content-Length: 25
+[04:35:08.398]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4147ms)
+[04:35:08.399]       Content-Type: application/json
+[04:35:08.400]       Content-Length: 25
+[04:35:08.417]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4080ms)
+[04:35:08.420]       Content-Type: application/json
+[04:35:08.420]       Content-Length: 25
+[04:35:08.442]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4242ms)
+[04:35:08.443]       Content-Type: application/json
+[04:35:08.443]       Content-Length: 25
+[04:35:08.468]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4420ms)
+[04:35:08.470]       Content-Type: application/json
+[04:35:08.471]       Content-Length: 25
+[04:35:08.495]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4616ms)
+[04:35:08.495]       Content-Type: application/json
+[04:35:08.496]       Content-Length: 25
+[04:35:08.510]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4351ms)
+[04:35:08.510]       Content-Type: application/json
+[04:35:08.511]       Content-Length: 25
+[04:35:08.564]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4747ms)
+[04:35:08.565]       Content-Type: application/json
+[04:35:08.565]       Content-Length: 25
+[04:35:08.586]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4684ms)
+[04:35:08.587]       Content-Type: application/json
+[04:35:08.587]       Content-Length: 25
+[04:35:08.607]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4366ms)
+[04:35:08.608]       Content-Type: application/json
+[04:35:08.608]       Content-Length: 25
+[04:35:08.638]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4564ms)
+[04:35:08.638]       Content-Type: application/json
+[04:35:08.639]       Content-Length: 25
+[04:35:08.649]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4434ms)
+[04:35:08.649]       Content-Type: application/json
+[04:35:08.650]       Content-Length: 25
+[04:35:08.654]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4548ms)
+[04:35:08.655]       Content-Type: application/json
+[04:35:08.655]       Content-Length: 25
+[04:35:08.662]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4520ms)
+[04:35:08.663]       Content-Type: application/json
+[04:35:08.663]       Content-Length: 25
+[04:35:08.729]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5060ms)
+[04:35:08.729]       Content-Type: application/json
+[04:35:08.730]       Content-Length: 25
+[04:35:08.787]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5098ms)
+[04:35:08.788]       Content-Type: application/json
+[04:35:08.789]       Content-Length: 25
+[04:35:08.807]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5014ms)
+[04:35:08.808]       Content-Type: application/json
+[04:35:08.808]       Content-Length: 25
+[04:35:08.833]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4913ms)
+[04:35:08.834]       Content-Type: application/json
+[04:35:08.835]       Content-Length: 25
+[04:35:08.876]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4631ms)
+[04:35:08.877]       Content-Type: application/json
+[04:35:08.877]       Content-Length: 25
+[04:35:08.907]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5078ms)
+[04:35:08.907]       Content-Type: application/json
+[04:35:08.908]       Content-Length: 25
+[04:35:08.932]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5204ms)
+[04:35:08.933]       Content-Type: application/json
+[04:35:08.933]       Content-Length: 25
+[04:35:08.961]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4776ms)
+[04:35:08.962]       Content-Type: application/json
+[04:35:08.966]       Content-Length: 25
+[04:35:08.996]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (5380ms)
+[04:35:08.999]       Content-Type: application/json
+[04:35:09.000]       Content-Length: 25
+[04:35:09.010]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4917ms)
+[04:35:09.012]       Content-Type: application/json
+[04:35:09.014]       Content-Length: 25
+[04:35:09.039]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (4890ms)
+[04:35:09.039]       Content-Type: application/json
+[04:35:09.040]       Content-Length: 25
+[04:35:10.209]    ⬅️ [CHECK_AVAILABILITY] Status: 200 OK (6397ms)
+[04:35:10.210]       Content-Type: application/json
+[04:35:10.211]       Content-Length: 25
+[04:35:10.809]    ⬅️ [CHECK_AVAILABILITY_SOFT401_RETRY1] Status: 401 Unauthorized (2463ms)
+[04:35:10.810]       Content-Type: unknown
+[04:35:10.811]       Content-Length: 0
+[04:35:10.811]    ⚠️ Soft 401 persists after 1 retries — skip refresh

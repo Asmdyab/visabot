@@ -1,0 +1,12 @@
+{
+  "ntfy": {
+    "enabled": true,
+    "server": "https://ntfy.sh",
+    "topic": "almaviva-d843debb2ca73b0234d4d35b",
+    "title": "APPOINTMENT FOUND!"
+  },
+  "logWindowLayout": {
+    "enabled": true,
+    "slots": 10
+  }
+}

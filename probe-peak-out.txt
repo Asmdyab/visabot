@@ -1,0 +1,57 @@
+=== A) brand-new client: cold /checks then warm /checks ===
+A1 cold  GET /checks                   401     424ms  cookie1=...65B499  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+A2 warm  GET /checks                   401     116ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+A3 warm  GET /checks                   401     204ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+
+=== B) warmup as the bot does it: HEAD homepage, then /checks ===
+B1 HEAD egy.almaviva-visa.it           200     744ms  cookie1=...5330D8  www-auth=-
+    body: <empty>
+B2 cold  GET /checks                   401     810ms  cookie1=...7D3EA7  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+B3 warm  GET /checks                   401     170ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+
+=== C) warmup on the API origin itself, then /checks ===
+C1 HEAD egyapi.almaviva-visa.it        200     287ms  cookie1=...0533DD  www-auth=-
+    body: <empty>
+C2 GET /checks (after api warm)        401      98ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+C3 warm  GET /checks                   401      86ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+
+=== D) exactly what the burst does (shared client, warmup then /checks) ===
+D1 HEAD homepage (pre-arm)             200     790ms  cookie1=...B82674  www-auth=-
+    body: <empty>
+D2 first burst GET /checks             401     330ms  cookie1=...9A16F7  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+D3 second burst GET /checks            401      87ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+
+=== E) IAM JWKS + /checks across the mark (starting in 179000ms) ===
+E1 GET IAM /certs                      200     309ms  cookie1=...EF9D85  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E1 GET /checks                         401     727ms  cookie1=...C3682F  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+E2 GET IAM /certs                      200     729ms  cookie1=-  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E2 GET /checks                         401     717ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+E3 GET IAM /certs                      200      88ms  cookie1=-  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E3 GET /checks                         401      88ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+E4 GET IAM /certs                      200     158ms  cookie1=-  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E4 GET /checks                         401     241ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+E5 GET IAM /certs                      200      98ms  cookie1=-  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E5 GET /checks                         401     141ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>
+E6 GET IAM /certs                      200      88ms  cookie1=-  www-auth=-
+    body: {"keys":[{"kid":"UuVLS_M8IKPr3fJfEIugf3_H-SgxqciW_IHVZspAfxA","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"643dsV04LjnWdp-rtYcPH2efCsQfHMsNZhwpJt1Pvp2OvQUVcPrB7GuZBThzA7Tt29vaKVhz
+E6 GET /checks                         401      87ms  cookie1=-  www-auth=Bearer error="invalid_token", error_description="Invalid serialized unsecured/JWS/JWE object: Missing second delimiter", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+    body: <empty>

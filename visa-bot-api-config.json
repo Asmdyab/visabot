@@ -1,0 +1,97 @@
+{
+  "checkPrearmLeadMs": 2500,
+  "burst401": {
+    "enabled": false,
+    "maxRetries": 6,
+    "retryDelayMs": 250,
+    "maxWindowMs": 12000
+  },
+  "tokenRefresh": {
+    "refreshIntervalMinutes": 8,
+    "enableAutoRefresh": true,
+    "enableReactiveRefresh": false,
+    "enableKeepAlive": true,
+    "keepAliveIntervalMinutes": 5,
+    "refreshBufferSeconds": 120,
+    "preCheckRefreshSeconds": 30,
+    "soft401Retries": 0
+  },
+  "rateLimitCooldown": 60,
+  "logWindowLayout": {
+    "enabled": true,
+    "slots": 10
+  },
+  "clockBurst": {
+    "enabled": true,
+    "everyMinutes": 5,
+    "windowSec": 10,
+    "perAccount": 2,
+    "preArmSec": 180
+  },
+  "trickle": {
+    "enabled": false
+  },
+  "aggressiveMode": {
+    "enabled": false
+  },
+  "sequentialAggressiveMode": {
+    "enabled": false
+  },
+  "sequentialAggressivePlusMode": {
+    "enabled": false
+  },
+  "sequentialAggressiveFakeMode": {
+    "enabled": false
+  },
+  "sequentialMode": {
+    "enabled": false
+  },
+  "sequentialParallelMode9": {
+    "enabled": false
+  },
+  "sequentialMode2": {
+    "enabled": false
+  },
+  "parallelRoundRobinMode": {
+    "enabled": false
+  },
+  "enableRoundRobin": false,
+  "groupByVisaOnly": false,
+  "enablePerAccountStartTime": false,
+  "warmupEnabled": false,
+  "tlsStealth": {
+    "enabled": true,
+    "customCiphers": true,
+    "useHttp2": true
+  },
+  "requestsPerMinute": 30,
+  "rotateIPAfter": 15,
+  "requestTimeout": 60000,
+  "accountMinIntervalMs": 2500,
+  "accountJitterMs": 400,
+  "accountWindowMax": 30,
+  "accountWindowMs": 90000,
+  "globalFireGapMs": 800,
+  "smartPacing": {
+    "enabled": true,
+    "safetyMargin": 1.1,
+    "rotation": {
+      "enabled": true,
+      "maxRequestsPerAccount": 45
+    }
+  },
+  "requireIPPrefix": false,
+  "skipIPVerification": true,
+  "debugRequests": false,
+  "stopControl": {
+    "enableStopAtTime": false,
+    "stopAtTime": "",
+    "enableStopAfterRequests": false,
+    "stopAfterRequests": 100
+  },
+  "ipHeaderMode": "egyptian",
+  "ipHeaderCountry": "italy",
+  "useSpoofedIPHeaders": true,
+  "useProxy": false,
+  "useProxyForLogin": false
+}

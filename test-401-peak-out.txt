@@ -1,0 +1,21 @@
+login ok (1934 chars) | first tick at 10:04:55
+cookie: ...AE2F98
+
+--- tick 1 (mark-5s: warm vs cold, same instant) ---
+  T1 WARM        200 11713ms 
+  T1 COLD        200 12964ms 
+
+--- tick 2 (mark-3s) ---
+  T2 WARM        200   159ms 
+  T2 COLD        200   316ms 
+
+--- tick 3 (mark+1s) ---
+  T3 WARM        200   203ms 
+  T3 COLD        200   605ms 
+
+--- tick 4 (off-peak control) ---
+  T4 WARM        200   241ms 
+  T4 COLD        200   632ms 
+
+================ WARM 0/4 401 | COLD 0/4 401 ================
+CONCLUSION: no 401 this run - the surge was mild; re-run on a busier mark.

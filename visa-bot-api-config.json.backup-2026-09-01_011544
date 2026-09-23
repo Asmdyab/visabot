@@ -1,0 +1,123 @@
+{
+  "office": "Cairo",
+  "pricing": "Standard",
+  "visaType": "Tourism Visa (C)",
+  "visaId": 1,
+  "tripDate": "01/12/2025",
+  "useProxy": false,
+  "skipIPVerification": false,
+  "proxyServer": "brd.superproxy.io:33335:brd-customer-hl_0b3f5f3e-zone-isp_proxy1-country-eg:2sbm4v5s15x7",
+  "rateLimitCooldown": 30,
+  "requestsPerMinute": 30,
+  "maxAccounts": 1000000,
+  "enableScheduledCheck": true,
+  "scheduledCheckTime": "14:49:56.900",
+  "enableLoginBeforeCheck": false,
+  "aggressiveMode": {
+    "enabled": false,
+    "parallelRequests": 1,
+    "intervalSeconds": 300
+  },
+  "sequentialMode": {
+    "enabled": false,
+    "delayMs": 0,
+    "enableStopAtTime": true,
+    "stopAtTime": "09:00:08",
+    "enableStopAfterRequests": false,
+    "stopAfterRequests": 10
+  },
+  "sequentialParallelMode9": {
+    "enabled": false,
+    "delayMs": 0,
+    "enableStopAtTime": false,
+    "stopAtTime": "",
+    "enableStopAfterRequests": false,
+    "stopAfterRequests": 10
+  },
+  "sequentialMode2": {
+    "enabled": true,
+    "delayMs": 0,
+    "enableStopAfterRequests": true,
+    "stopAfterRequests": 2,
+    "repeatCycles": true,
+    "repeatIntervalMinutes": 5,
+    "maxCycles": 0
+  },
+  "parallelRoundRobinMode": {
+    "enabled": false,
+    "continueAfterFound": true,
+    "checkIntervalSeconds": 30,
+    "maxRequestsPerAccount": 50
+  },
+  "sequentialAggressiveMode": {
+    "enabled": false,
+    "delayBetweenAccountsMs": 1,
+    "delayBetweenCyclesMs": 300000
+  },
+  "sequentialAggressivePlusMode": {
+    "enabled": false,
+    "delayBetweenAccountsMs": 200,
+    "delayBetweenCyclesMs": 1000,
+    "maxCycles": 0,
+    "restartDelayMinutes": 0
+  },
+  "stopControl": {
+    "enableStopAtTime": false,
+    "stopAtTime": "",
+    "enableStopAfterRequests": false,
+    "stopAfterRequests": 100
+  },
+  "enablePerAccountStartTime": false,
+  "telegram": {
+    "enabled": false,
+    "botToken": "",
+    "channels": [],
+    "messageLines": [
+      "title",
+      "account",
+      "for",
+      "phone",
+      "office",
+      "visa",
+      "date",
+      "requestSent",
+      "responseReceived",
+      "responseTime"
+    ]
+  },
+  "useSpoofedIPHeaders": true,
+  "enableRoundRobin": false,
+  "destination": "",
+  "useProxyForLogin": false,
+  "useProxySession": true,
+  "proxyMode": "single",
+  "proxyProtocol": "http",
+  "ipList": [],
+  "rotateIPAfter": 15,
+  "requireIPPrefix": true,
+  "debugRequests": true,
+  "showRequestDetails": true,
+  "rrStartTime": "04:30",
+  "rrInterval": 60,
+  "rrRequestsPerAccount": 25,
+  "enableScheduledLogin": false,
+  "scheduledLoginTime": "",
+  "requestTimeout": 60000,
+  "tokenRefresh": {
+    "refreshIntervalMinutes": 13,
+    "enableAutoRefresh": true,
+    "enableReactiveRefresh": false,
+    "enableKeepAlive": true,
+    "keepAliveIntervalMinutes": 6,
+    "refreshBufferSeconds": 120,
+    "soft401Retries": 1
+  },
+  "groupByVisaOnly": false,
+  "tlsStealth": {
+    "enabled": true,
+    "customCiphers": true,
+    "useHttp2": true
+  },
+  "ipHeaderMode": "egyptian",
+  "captureProxy": ""
+}

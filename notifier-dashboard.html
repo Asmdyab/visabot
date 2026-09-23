@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مراقب حجز المواعيد — Almaviva</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --panel: #111a2e;
+    --panel-2: #16223a;
+    --border: #22304f;
+    --text: #e6edf7;
+    --muted: #8fa3bf;
+    --accent: #38bdf8;
+    --success: #22c55e;
+    --warn: #f59e0b;
+    --danger: #ef4444;
+    --gold: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(56,189,248,0.14), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(251,191,36,0.10), transparent 55%),
+      var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 14px;
+    background: linear-gradient(135deg, var(--panel), var(--panel-2));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .logo {
+    width: 46px; height: 46px; border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #1d4ed8);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; box-shadow: 0 4px 18px rgba(56,189,248,0.35);
+  }
+  .brand h1 { font-size: 19px; font-weight: 700; letter-spacing: .3px; }
+  .brand small { color: var(--muted); font-size: 12px; }
+
+  .statusbox {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 10px 16px;
+  }
+  .dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--muted);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.3);
+    transition: background .3s;
+  }
+  .dot.on { background: var(--success); animation: pulse 1.8s infinite; }
+  .dot.off { background: var(--danger); animation: pulse 1.8s infinite; }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.45); }
+    70% { box-shadow: 0 0 0 10px rgba(34,197,94,0); }
+    100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+  }
+  .status-text { font-size: 13px; color: var(--muted); }
+  .status-text b { color: var(--text); }
+
+  .summary {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    margin: 20px 0;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px;
+  }
+  .card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  .card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .card .num.gold { color: var(--gold); }
+  .card .num.small { font-size: 16px; padding-top: 9px; }
+  .card .num.online { color: var(--success); }
+  .card .num.offline { color: var(--danger); }
+  .card .num.unknown { color: var(--muted); }
+  .bot-seen { color: var(--muted); font-size: 12px; margin-top: 6px; }
+
+  .user-list { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px 16px; }
+  .user-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 14px;
+  }
+  .user-row .uname { font-weight: 700; font-size: 14px; }
+  .user-row .uips { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .user-row .udevice { color: #e2e8f0; font-size: 13px; font-weight: 700; margin-top: 4px; }
+  .user-row .uips span, .user-row .udevice span { direction: ltr; display: inline-block; }
+  .user-row .ustrat {
+    margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.08);
+    color: #cbd5e1; font-size: 12px; line-height: 1.55;
+  }
+  .user-row .ustrat .wline { color: #94a3b8; padding-right: 8px; }
+  .user-row .ustate { font-weight: 700; font-size: 13px; flex-shrink: 0; }
+  .user-row .ustate.on { color: var(--success); }
+  .user-row .ustate.off { color: var(--danger); }
+
+  .last-hit {
+    display: none;
+    background: linear-gradient(135deg, rgba(251,191,36,0.12), rgba(251,191,36,0.03));
+    border: 1px solid rgba(251,191,36,0.45);
+    border-radius: 16px; padding: 20px 22px; margin-bottom: 20px;
+    box-shadow: 0 0 40px rgba(251,191,36,0.12);
+    animation: flashIn .6s ease;
+  }
+  .last-hit .arrow { font-size: 15px; color: var(--gold); }
+  @keyframes flashIn {
+    from { opacity: 0; transform: translateY(-8px) scale(.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .last-hit h2 {
+    color: var(--gold); font-size: 18px; margin-bottom: 10px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .hit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px 20px; }
+  .hit-grid div { display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px dashed rgba(255,255,255,0.08); padding: 4px 0; font-size: 13px; }
+  .hit-grid span { color: var(--muted); }
+  .hit-grid b { color: var(--text); font-weight: 600; }
+
+  .panel {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 16px; overflow: hidden;
+  }
+  .panel-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    background: var(--panel-2);
+  }
+  .panel-head h3 { font-size: 15px; }
+  .panel-head .count { color: var(--muted); font-size: 13px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    text-align: right; padding: 10px 16px;
+    font-size: 12px; color: var(--muted); font-weight: 600;
+    border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);
+  }
+  tbody td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  tbody tr.newrow { background: rgba(251,191,36,0.10); animation: rowIn .5s ease; }
+  @keyframes rowIn { from { background: rgba(251,191,36,0.30); } to { background: rgba(251,191,36,0.10); } }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  td .em { font-weight: 600; color: var(--gold); }
+  .tag-ok { color: var(--success); font-weight: 700; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 16px !important; font-size: 14px; }
+
+  .foot {
+    display: flex; justify-content: center; align-items: center; gap: 8px;
+    margin-top: 18px; color: var(--muted); font-size: 12px;
+  }
+  .btn {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    border: none; color: #fff; font-size: 13px; font-weight: 600;
+    padding: 10px 18px; border-radius: 10px; cursor: pointer;
+    box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+    transition: transform .15s, box-shadow .15s;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(37,99,235,0.45); }
+  .btn.ghost {
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border); box-shadow: none;
+  }
+  .btn.ghost:hover { color: var(--text); }
+  .btn.sound {
+    background: #7c3aed; color: #fff; border: none;
+    border-radius: 10px; padding: 10px 16px; cursor: pointer;
+    font-size: 14px; font-weight: 700; margin-right: 10px;
+    transition: background .2s;
+  }
+  .btn.sound.on { background: var(--success); }
+  .btn.sound:hover { background: #6d28d9; }
+  .btn.sound.on:hover { background: #16a34a; }
+  .mini-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--muted);
+    border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer;
+    transition: all .15s; white-space: nowrap;
+  }
+  .mini-btn:hover { border-color: var(--accent); color: var(--text); }
+  .mini-btn.primary { background: rgba(139,92,246,0.15); border-color: var(--accent); color: var(--accent); }
+  .mini-btn.primary:hover { background: var(--accent); color: #fff; }
+  .mini-btn.danger { background: rgba(239,68,68,0.12); border-color: #ef4444; color: #ef4444; }
+  .mini-btn.danger:hover { background: rgba(239,68,68,0.3); }
+  .mini-btn.done {
+    background: rgba(34,197,94,0.15); border-color: var(--success); color: var(--success);
+    cursor: default; pointer-events: none;
+  }
+  .pay-link {
+    margin-top: 8px; max-width: 280px;
+    display: flex; flex-direction: column; gap: 6px; align-items: flex-start;
+  }
+  .pay-link a {
+    color: var(--accent); font-size: 11px; word-break: break-all; line-height: 1.4;
+  }
+  .status-k {
+    display: inline-block; padding: 4px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 700; white-space: nowrap;
+  }
+  .status-k.no { background: rgba(255,255,255,0.04); color: var(--muted); }
+  .status-k.yes { background: rgba(34,197,94,0.15); color: var(--success); }
+  .status-k.pdf { background: rgba(56,189,248,0.15); color: var(--accent); }
+  .toast {
+    position: fixed; bottom: 26px; right: 26px; z-index: 50;
+    background: #0f172a; border: 1px solid var(--success);
+    border-radius: 12px; padding: 14px 20px; display: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    font-size: 14px;
+  }
+  .toast b { color: var(--success); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo">🛂</div>
+      <div>
+        <h1>مراقب حجز المواعيد</h1>
+        <small>Almaviva Office Reservation Monitor</small>
+      </div>
+    </div>
+    <div class="statusbox">
+      <div class="dot" id="statusDot"></div>
+      <div class="status-text" id="statusText">جارِ الاتصال…</div>
+    </div>
+    <button class="btn sound" id="soundBtn" onclick="unlockAudio()">🔇 تفعيل الصوت</button>
+  </header>
+
+  <div class="summary" style="display: none;">
+    <div class="card">
+      <div class="label">إجمالي الإشعارات المستلمة</div>
+      <div class="num" id="totalCount">0</div>
+    </div>
+    <div class="card">
+      <div class="label">الحسابات التي لقطت معاد</div>
+      <div class="num gold" id="accCount">0</div>
+    </div>
+    <div class="card">
+      <div class="label">حالة الخدمة</div>
+      <div class="num" id="svcCount" style="font-size:15px; padding-top:9px;">—</div>
+    </div>
+  </div>
+
+  <div class="panel" id="usersPanel" style="margin: 20px 0; display: none;">
+    <div class="panel-head">
+      <h3>👤 أسماء المستخدمين</h3>
+    </div>
+    <div class="user-list" id="userList">
+      <div class="empty" style="padding: 18px 8px !important;">بانتظار أول نسخة تشتغل…</div>
+    </div>
+  </div>
+
+  <div class="panel" id="strategyPanel" style="margin: 20px 0; display: none;">
+    <div class="panel-head">
+      <h3>🪟 سجل اللوجات</h3>
+      <span class="count" id="strategyCount">0</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>اسم المستخدم</th>
+            <th>وقت بداية التشييك</th>
+            <th>الوضع</th>
+            <th>نوع التأشيرة</th>
+            <th>المركز</th>
+            <th>وقت التسجيل</th>
+          </tr>
+        </thead>
+        <tbody id="strategyRows"></tbody>
+      </table>
+    </div>
+    <div style="padding: 12px 16px 16px;">
+      <button class="btn ghost" onclick="clearStrategyLog()">🗑️ مسح سجل اللوجات</button>
+    </div>
+  </div>
+
+  <div class="panel" id="profilesPanel" style="margin-top:20px; display:none;">
+    <div class="panel-head">
+      <h3>📌 متابعة البروفايلات (الدفع + الملفات)</h3>
+      <span class="count" id="profCount">0 حساب</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>الحساب</th>
+            <th>رُصد المعاد</th>
+            <th>حالة الدفع</th>
+            <th>الملفات PDF</th>
+            <th>إجراء</th>
+          </tr>
+        </thead>
+        <tbody id="profRows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top: 20px;">
+    <div class="panel-head">
+      <h3>📋 سجل الإشعارات</h3>
+      <span class="count" id="notifCount">0</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>الوقت</th>
+            <th>الحساب</th>
+            <th>العميل</th>
+            <th>الهاتف</th>
+            <th>المكتب</th>
+            <th>نوع الفيزا</th>
+            <th>اسم المستخدم</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot">
+    <button class="btn ghost" onclick="clearLog()" id="clearBtn">🗑️ مسح سجل الإشعارات</button>
+    <span>اللوحة مفتوحة محلياً — الاستماع يعمل في الخلفية</span>
+  </div>
+
+  <div class="toast" id="toast"><b>🚨 معاد جديد!</b> تحديث اللوحة…</div>
+</div>
+
+<script>
+const MAX_ROWS = 40;
+let events = [];
+let profiles = {};
+let strategyLogs = [];
+let lastStrategySerial = null;
+
+async function fetchLive() {
+  const res = await fetch('/api/events');
+  const data = await res.json();
+  const isNew = lastSerial !== null && data.serial > lastSerial;
+  const prevLen = events.length;
+  const prevProfKeys = Object.keys(profiles).sort().join('|');
+  events = data.events || [];
+  profiles = data.profiles || {};
+  strategyLogs = data.strategyLogs || [];
+  const profKeys = Object.keys(profiles).sort().join('|');
+  if (isNew || lastSerial === null || events.length !== prevLen || profKeys !== prevProfKeys) {
+    render(events);
+    renderProfiles(profiles);
+  }
+  if (lastStrategySerial === null || data.strategySerial !== lastStrategySerial) {
+    renderStrategy(strategyLogs);
+    lastStrategySerial = data.strategySerial;
+  }
+  updateStatus(data);
+  if (isNew && events.length) showToast();
+  lastSerial = data.serial;
+  if (isNew && events.length && !beepMuted && audioUnlocked) playBeep();
+}
+let lastSerial = null;
+let beepMuted = false;
+const SHOW_USERS_PANEL = false;
+const SHOW_CONNECTION_STATUS = false;
+const SHOW_PROFILES_PANEL = false;
+const SHOW_STRATEGY_PANEL = false;
+function updateStatus(data) {
+  const dot = document.getElementById('statusDot');
+  const txt = document.getElementById('statusText');
+  if (data.listening) {
+    dot.className = 'dot on';
+    txt.innerHTML = '<b>متصلاً</b> — يستمع للمواضيع بشكل نشط';
+  } else {
+    dot.className = 'dot off';
+    txt.innerHTML = 'غير متصل';
+  }
+  const usersPanel = document.getElementById('usersPanel');
+  if (usersPanel) usersPanel.style.display = SHOW_USERS_PANEL ? '' : 'none';
+  if (SHOW_USERS_PANEL) renderUsers(data.bots || {}, events);
+  const strategyPanel = document.getElementById('strategyPanel');
+  if (strategyPanel) strategyPanel.style.display = SHOW_STRATEGY_PANEL ? '' : 'none';
+}
+function renderUsers(bots, list) {
+  if (!SHOW_USERS_PANEL) return;
+  const box = document.getElementById('userList');
+  if (!box) return;
+  const known = ['WATCH DOGS TEAM', 'AMR', 'ALY', 'RAHMA'];
+  const extras = [];
+  Object.keys(bots || {}).forEach((n) => { if (n && n !== 'البوت' && !known.includes(n)) extras.push(n); });
+  (list || []).forEach((e) => {
+    const n = e && e.bot ? String(e.bot).trim() : '';
+    if (n && !known.includes(n) && !extras.includes(n)) extras.push(n);
+  });
+  const names = known.concat(extras.sort((a, b) => a.localeCompare(b, 'ar')));
+  box.innerHTML = names.map((name) => {
+    const bot = bots[name] || {};
+    const online = bot.state === 'online';
+    const router = bot.routerIp ? esc(bot.routerIp) : '—';
+    const device = bot.deviceIp ? esc(bot.deviceIp) : '—';
+    const pub = bot.publicIp ? esc(bot.publicIp) : '—';
+    const statusHtml = SHOW_CONNECTION_STATUS
+      ? ('<span class="ustate ' + (online ? 'on' : 'off') + '">' + (online ? 'متصل' : 'مش متصل') + '</span>')
+      : '';
+    return '<div class="user-row"><div><div class="uname">' + esc(name) + '</div><div class="udevice">آيبي الجهاز: <span>' + device + '</span></div><div class="uips">آيبي الراوتر: <span>' + router + '</span></div><div class="uips">آيبي النت: <span>' + pub + '</span></div></div>' + statusHtml + '</div>';
+  }).join('');
+}
+function renderStrategy(list) {
+  if (!SHOW_STRATEGY_PANEL) return;
+  const tbody = document.getElementById('strategyRows');
+  const countEl = document.getElementById('strategyCount');
+  if (countEl) countEl.textContent = String((list || []).length);
+  if (!tbody) return;
+  if (!(list || []).length) {
+    tbody.innerHTML = '<tr><td colspan="6" class="empty">مفيش لوجات مسجلة بعد — هتظهر هنا لما أي نسخة تدوس تشغيل</td></tr>';
+    return;
+  }
+  tbody.innerHTML = list.map((r) => {
+    return '<tr>'
+      + '<td class="em">' + esc(r.bot || '—') + '</td>'
+      + '<td><span style="color:#94a3b8">وقت بداية التشييك:</span> ' + esc(r.checkStart || '—') + '</td>'
+      + '<td><span style="color:#94a3b8">الوضع:</span> ' + esc(r.mode || '—') + '</td>'
+      + '<td><span style="color:#94a3b8">نوع التأشيرة:</span> ' + esc(r.visa || '—') + '</td>'
+      + '<td><span style="color:#94a3b8">المركز:</span> ' + esc(r.office || '—') + '</td>'
+      + '<td>' + esc(r.time || '—') + '</td>'
+      + '</tr>';
+  }).join('');
+}
+function render(list) {
+  const tbody = document.getElementById('rows');
+  const totalEl = document.getElementById('totalCount');
+  const accEl = document.getElementById('accCount');
+  const notifCount = document.getElementById('notifCount');
+  if (totalEl) totalEl.textContent = list.length;
+  const uniqEmails = new Set(list.map(e => e.account).filter(Boolean));
+  if (accEl) accEl.textContent = uniqEmails.size;
+  if (notifCount) notifCount.textContent = String(list.length);
+
+  if (!list.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">لا توجد إشعارات بعد — أول معاد سيظهر هنا فوراً</td></tr>';
+    return;
+  }
+  const frag = document.createDocumentFragment();
+  list.slice(0, MAX_ROWS).forEach((e, i) => {
+    const tr = document.createElement('tr');
+    if (i === 0 && list.length <= MAX_ROWS && Date.now() - e.ts < 15000) tr.className = 'newrow';
+    const td = (v, cls) => {
+      const c = document.createElement('td');
+      if (cls) c.className = cls;
+      c.innerHTML = esc(v) || '—';
+      return c;
+    };
+    tr.appendChild(td(e.time));
+    tr.appendChild(td(e.account, 'em'));
+    tr.appendChild(td(e.customer));
+    tr.appendChild(td(e.phone));
+    tr.appendChild(td(e.office));
+    tr.appendChild(td(e.visa));
+    tr.appendChild(td(e.bot, 'em'));
+    frag.appendChild(tr);
+  });
+  tbody.innerHTML = '';
+  tbody.appendChild(frag);
+}
+function renderProfiles(profs) {
+  const panel = document.getElementById('profilesPanel');
+  if (!SHOW_PROFILES_PANEL) {
+    if (panel) panel.style.display = 'none';
+    return;
+  }
+  const tbody = document.getElementById('profRows');
+  const list = Object.values(profs).sort((a, b) => (b.foundAt || 0) - (a.foundAt || 0));
+  document.getElementById('profCount').textContent = list.length + ' حساب';
+  panel.style.display = list.length ? 'block' : 'none';
+  tbody.innerHTML = '';
+  const frag = document.createDocumentFragment();
+  list.slice(0, 30).forEach(p => {
+    const tr = document.createElement('tr');
+    const td = (v, cls) => {
+      const c = document.createElement('td');
+      if (cls) c.className = cls;
+      c.innerHTML = v;
+      return c;
+    };
+    const email = p.account;
+    const m = p.monitor || {};
+
+    let monBadge;
+    if (p.monitorEnabled !== true) {
+      monBadge = '<span class="status-k no">⏸ متوقفة — مراقبة يدوية</span>';
+    } else if (m.error) {
+      monBadge = '<span class="status-k no" title="' + esc(m.error) + '">⛔ ' + esc(m.error) + '</span>';
+    } else if (m.ok) {
+      monBadge = '<span class="status-k yes">🔎 بتراقب' + (m.payReady || m.pdfReady ? ' <b>✨ فيه جديد!</b>' : '') + '</span>';
+    } else {
+      monBadge = '<span class="status-k no">⏳ بانتظار أول فحص…</span>';
+    }
+
+    const payReadyNow = p.monitor && p.monitor.payReady === true;
+    const payText = payReadyNow
+      ? '✅ ظهر الدفع — جاهز للإتمام' + (p.payAmount ? ' (' + esc(p.payAmount) + ')' : '')
+      : '⏳ الدفع لسه متوفرش';
+    const payLinkHtml = p.payLink
+      ? '<div class="pay-link"><a href="' + esc(p.payLink) + '" target="_blank" rel="noopener">' + esc(p.payLink) + '</a>'
+        + '<button class="mini-btn" onclick="copyPayLink(this, \'' + encodeURIComponent(p.payLink) + '\')">📋 نسخ اللينك</button></div>'
+      : '';
+    const payCell = payReadyNow
+      ? '<span class="status-k yes">' + payText + '</span><br><button class="mini-btn primary" onclick="payNow(this, \'' + esc(email) + '\')">💳 ادخل على الدفع</button>' + payLinkHtml
+      : '<span class="status-k no" title="الزر يظهر تلقائياً أول ما يبقى الدفع جاهز">' + payText + '</span>';
+
+    const pdfText = p.pdfAt ? '📄 PDF نزل' : '⏳ الملف لسه متوفرش';
+    const pdfCell = p.pdfAt
+      ? (p.pdfFile
+        ? '<span class="status-k pdf">' + pdfText + '</span><br><button class="mini-btn done" onclick="window.open(\'/dl/' + esc(p.pdfFile) + '\',\'_blank\')">📄 فتح الملف</button>'
+        : '<span class="status-k pdf">' + pdfText + '</span>')
+      : '<span class="status-k no">' + pdfText + '</span>';
+
+    const monBtn = p.monitorEnabled === true
+      ? '<button class="mini-btn danger" onclick="toggleMonitor(this, \'' + esc(email) + '\')">⏹️ إيقاف المراقبة</button>'
+      : '<button class="mini-btn primary" onclick="toggleMonitor(this, \'' + esc(email) + '\')">▶️ بدء المراقبة</button>';
+    const delBtn = '<button class="mini-btn danger" onclick="deleteProfile(this, \'' + esc(email) + '\')">🗑️ مسح</button>';
+
+    tr.appendChild(td('<b style="color:var(--gold)">' + esc(email) + '</b>'));
+    tr.appendChild(td(p.foundAt ? new Date(p.foundAt).toLocaleString('ar-EG', { dateStyle: 'short', timeStyle: 'medium' }) : '—'));
+    tr.appendChild(td(payCell));
+    tr.appendChild(td(pdfCell));
+    const actions = document.createElement('td');
+    actions.style.cssText = 'display:flex; gap:8px; flex-wrap:wrap; align-items:center;';
+    actions.innerHTML = monBtn + monBadge + delBtn;
+    tr.appendChild(actions);
+    frag.appendChild(tr);
+  });
+  tbody.appendChild(frag);
+}
+
+async function refreshProfile(btn, email) {
+  const old = btn.innerHTML;
+  btn.innerHTML = '⏳';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/refresh-profile', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ account: email })
+    });
+    const data = await res.json();
+    if (data.ok && data.profile && data.profile.monitor && data.profile.monitor.error) {
+      eventLogNote('مراقبة الحساب: ' + data.profile.monitor.error);
+    } else {
+      eventLogNote('تم تحديث مراقبة الحساب');
+    }
+    fetchLive();
+  } catch (_) {
+    eventLogNote('فشل تحديث مراقبة الحساب');
+  } finally {
+    btn.innerHTML = old;
+    btn.disabled = false;
+  }
+}
+
+async function toggleMonitor(btn, email) {
+  const old = btn.innerHTML;
+  btn.innerHTML = '⏳';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/toggle-monitor', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ account: email })
+    });
+    const data = await res.json();
+    eventLogNote(data.monitorEnabled ? 'تم بدء مراقبة الحساب — بيسأل كل 30 ثانية' : 'تم إيقاف مراقبة الحساب');
+    fetchLive();
+  } catch (_) {
+    eventLogNote('فشل تبديل المراقبة');
+  } finally {
+    btn.innerHTML = old;
+    btn.disabled = false;
+  }
+}
+
+async function copyPayLink(btn, encoded) {
+  const url = decodeURIComponent(encoded || '');
+  if (!url) return;
+  try {
+    await navigator.clipboard.writeText(url);
+    eventLogNote('تم نسخ لينك الدفع');
+  } catch (_) {
+    prompt('انسخ لينك الدفع:', url);
+  }
+}
+
+async function payNow(btn, email) {
+  const old = btn.innerHTML;
+  btn.innerHTML = '⏳ جاري تجهيز الدفع…';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/pay', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ account: email })
+    });
+    const data = await res.json();
+    if (data.ok && data.url) {
+      window.open(data.url, '_blank');
+      eventLogNote('تم فتح صفحة الدفع — أتممها في التبويب الجديد');
+    } else {
+      eventLogNote('فشل تجهيز الدفع: ' + (data.error || 'خطأ غير معروف'));
+    }
+    fetchLive();
+  } catch (_) {
+    eventLogNote('فشل تجهيز الدفع');
+  } finally {
+    btn.innerHTML = old;
+    btn.disabled = false;
+  }
+}
+
+async function deleteProfile(btn, email) {
+  if (!confirm('هل تريد مسح الحساب ' + email + ' من متابعة البروفايلات؟')) return;
+  const old = btn.innerHTML;
+  btn.innerHTML = '⏳';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/delete-profile', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ account: email })
+    });
+    const data = await res.json();
+    if (data.ok) {
+      delete profiles[email];
+      renderProfiles(profiles);
+    }
+    eventLogNote(data.ok ? 'تم مسح الحساب' : 'فشل مسح الحساب');
+    await fetchLive();
+  } catch (_) {
+    eventLogNote('فشل مسح الحساب');
+  } finally {
+    btn.innerHTML = old;
+    btn.disabled = false;
+  }
+}
+
+let toastTimer = null;
+function showToast() {
+  const t = document.getElementById('toast');
+  t.style.display = 'block';
+  if (!beepMuted) playBeep();
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.style.display = 'none', 5000);
+}
+let audioCtx = null;
+let audioUnlocked = false;
+function ensureCtx() {
+  if (!audioCtx) {
+    try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch (_) {}
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    try { audioCtx.resume(); } catch (_) {}
+  }
+  return audioCtx;
+}
+function setSoundBtn(on) {
+  const b = document.getElementById('soundBtn');
+  if (on) {
+    b.classList.add('on');
+    b.innerHTML = '🔊 الصوت مفعّل (دوس للإيقاف)';
+  } else {
+    b.classList.remove('on');
+    b.innerHTML = '🔇 الصوت متوقف (دوس للتشغيل)';
+  }
+}
+function unlockAudio() {
+  if (audioUnlocked) {
+    beepMuted = !beepMuted;
+    setSoundBtn(!beepMuted);
+    eventLogNote(beepMuted ? 'تم إيقاف صوت التنبيه' : 'تم تشغيل صوت التنبيه');
+    if (!beepMuted) playBeep();
+    return;
+  }
+  const ctx = ensureCtx();
+  if (ctx && ctx.state === 'running') {
+    audioUnlocked = true;
+    beepMuted = false;
+    setSoundBtn(true);
+    playBeep();
+    eventLogNote('تم تفعيل صوت التنبيه');
+  } else {
+    setTimeout(() => {
+      if (audioCtx && audioCtx.state === 'running') {
+        audioUnlocked = true;
+        beepMuted = false;
+        setSoundBtn(true);
+        playBeep();
+        eventLogNote('تم تفعيل صوت التنبيه');
+      }
+    }, 250);
+  }
+}
+function playBeep() {
+  try {
+    const ctx = ensureCtx();
+    if (!ctx || ctx.state !== 'running') return;
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.type = 'sine'; o.frequency.value = 880;
+    g.gain.setValueAtTime(0.0, ctx.currentTime);
+    g.gain.linearRampToValueAtTime(0.25, ctx.currentTime + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
+    o.connect(g); g.connect(ctx.destination);
+    o.start(); o.stop(ctx.currentTime + 0.6);
+  } catch (_) {}
+}
+// Unlock the audio context on the first user interaction
+['click', 'keydown', 'touchstart', 'pointerdown'].forEach(ev =>
+  window.addEventListener(ev, () => ensureCtx(), { once: false }));
+function esc(v) {
+  return String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+async function testIt() {
+  const res = await fetch('/api/test', { method: 'POST' });
+  const data = await res.json();
+  if (res.ok) fetchLive();
+}
+
+async function clearLog() {
+  if (!confirm('مسح سجل الإشعارات؟')) return;
+  const res = await fetch('/api/clear', { method: 'POST' });
+  if (res.ok) {
+    events = [];
+    profiles = {};
+    render(events);
+    renderProfiles(profiles);
+    await fetchLive();
+    eventLogNote('تم مسح السجلات');
+  }
+}
+async function clearStrategyLog() {
+  if (!confirm('مسح سجل اللوجات؟')) return;
+  const res = await fetch('/api/clear-strategy', { method: 'POST' });
+  if (res.ok) {
+    strategyLogs = [];
+    renderStrategy(strategyLogs);
+    lastStrategySerial = null;
+    await fetchLive();
+    eventLogNote('تم مسح سجل اللوجات');
+  }
+}
+let noteTimer = null;
+function eventLogNote(msg) {
+  const t = document.getElementById('toast');
+  t.style.display = 'block';
+  t.innerHTML = '<b>' + esc(msg) + '</b>';
+  clearTimeout(noteTimer);
+  noteTimer = setTimeout(() => t.style.display = 'none', 2500);
+}
+
+window.addEventListener('error', () => {});
+fetchLive();
+setInterval(fetchLive, 3000);
+</script>
+</body>
+</html>

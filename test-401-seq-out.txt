@@ -1,0 +1,9 @@
+{"login":"ok"}
+{"shot":"SAME-CLIENT #1","status":200,"ms":323,"www":null}
+{"shot":"SAME-CLIENT #2","status":200,"ms":122,"www":null}
+{"shot":"SAME-CLIENT #3","status":200,"ms":114,"www":null}
+{"shot":"SAME-CLIENT #4","status":200,"ms":111,"www":null}
+{"shot":"SAME-CLIENT #5","status":200,"ms":115,"www":null}
+{"shot":"FRESH-CLIENT #1","status":200,"ms":844,"www":null}
+{"shot":"FRESH-CLIENT #2","status":200,"ms":326,"www":null}
+{"shot":"FRESH-CLIENT #3","status":200,"ms":322,"www":null}

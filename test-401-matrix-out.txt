@@ -1,0 +1,6 @@
+{"login":"ok","expin":900,"tokLen":1934,"fireAt":"10:15:07"}
+{"warmHeadMs":2080}
+{"shot":"C-H1burp","error":"self-signed certificate in certificate chain"}
+{"shot":"B-H2warm(2s)","via":"H2-impit","status":200,"ms":3918,"www":null,"srv":null,"body":"false"}
+{"shot":"A-H2cold","via":"H2-impit","status":200,"ms":3966,"www":null,"srv":null,"body":"false"}
+{"shot":"D-H2cold-again","via":"H2-impit","status":401,"ms":160,"www":"Bearer error=\"invalid_token\", error_description=\"Invalid JWT serialization: Missing dot delimiter(s)\", error_uri=\"https://tools.ietf.org/html/rfc6750#section-3.1\"","srv":null,"body":"<empty>"}

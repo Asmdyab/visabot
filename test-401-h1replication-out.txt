@@ -1,0 +1,10 @@
+{"login":"ok","fireAt":"10:34:55"}
+--- round 1 (fresh, parallel) ---
+{"shot":"R1-H2a","via":"impit-H2","status":401,"ms":7952,"www":null}
+{"shot":"R1-H1a","via":"undici-H1","status":401,"ms":7961,"www":null}
+{"shot":"R1-H2b","via":"impit-H2","status":200,"ms":13726,"www":null}
+{"shot":"R1-H1b","via":"undici-H1","status":200,"ms":13878,"www":null}
+--- round 2 (+1s) ---
+{"shot":"R2-H2a-warm","via":"impit-H2","status":200,"ms":925,"www":null}
+{"shot":"R2-H1c","via":"undici-H1","status":200,"ms":1280,"www":null}
+{"shot":"R2-H2b-warm","via":"impit-H2","status":200,"ms":1300,"www":null}

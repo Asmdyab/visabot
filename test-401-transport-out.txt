@@ -1,0 +1,6 @@
+{"login":"ok","fireAt":"10:24:55"}
+{"shot":"D-H1burp","error":"self-signed certificate in certificate chain"}
+{"shot":"B-impit-nospoof","via":"impit-H2","status":401,"ms":7509,"www":null,"body":"<empty>"}
+{"shot":"A-impit","via":"impit-H2","status":401,"ms":7519,"www":null,"body":"<empty>"}
+{"shot":"C-undici","via":"undici","status":200,"ms":14452,"www":null,"body":"false"}
+{"shot":"A2-impit-again","via":"impit-H2","status":200,"ms":1134,"www":null,"body":"false"}

@@ -1,0 +1,72 @@
+=== 401 root-cause probe | account mahmoud.0505p@gmail.com | SHOT1 in 260200ms ===
+login ok: expires_in=900s dots=2 len=1934
+  header : {"alg":"RS256","typ":"JWT","kid":"AF4Qc6bn79sccs3diAh6Yi24YcBAp9WVtvbcaVS1Dm4"}
+  claims : exp=1789629035 iat=1789628135 azp=aa-visasys-public typ=Bearer sid=660c1a05... iss=https://egyiam.almaviva-visa.it/realms/oauth2-visaSystem-realm-pkce
+  server now: 2026-09-17T06:55:35.592Z (token exp: 2026-09-17T07:10:35.000Z → 899s left)
+
+[09:58:55.182] cookie warmup on a throwaway client (as acquireWafCookie does)
+
+--- WARMUP GET egy. (cookie) @09:58:55.184 (330ms) sent 0 dots / 0 chars ---
+    status            : 200 OK
+    www-authenticate  : -
+    server            : XXXXXXXXXXXXX
+    x-azure-ref       : -
+    set-cookie        : cookiesession1=678A3E5239A033029C0B4DDACF577A15;Expires=Fri, 17 Sep 2027 06:58:55 GMT;Path=/
+    body              : <!doctype html> <html lang="en" data-critters-container> <head> <meta charset="utf-8"> <base href="/"> <meta name="viewp
+    harvested cookiesession1 = ...577A15
+
+[09:59:00.191] API-origin warmup on the BURST client (the proposed fix)
+
+--- WARMUP HEAD egyapi (burst client) @09:59:00.201 (398ms) sent 0 dots / 0 chars ---
+    status            : 200 OK
+    www-authenticate  : -
+    server            : -
+    x-azure-ref       : -
+    set-cookie        : cookiesession1=678A3E52EBBF6469BB66B2FE830328F8;Expires=Fri, 17 Sep 2027 06:59:00 GMT;Path=/
+    body              : <empty>
+
+[09:59:55.192] ======== FIRING (windowStart) ========
+
+--- SHOT1 warm-API connection @09:59:55.193 (8263ms) sent 2 dots / 1934 chars ---
+    status            : 401 Unauthorized
+    www-authenticate  : -
+    server            : -
+    x-azure-ref       : -
+    set-cookie        : -
+    body              : <empty>
+
+--- SHOT2 COLD connection (bot replication) @10:00:03.459 (3217ms) sent 2 dots / 1934 chars ---
+    status            : 401 Unauthorized
+    www-authenticate  : -
+    server            : -
+    x-azure-ref       : -
+    set-cookie        : -
+    body              : <empty>
+
+--- SHOT3 same cold client now warm @10:00:07.578 (6106ms) sent 2 dots / 1934 chars ---
+    status            : 200 OK
+    www-authenticate  : -
+    server            : -
+    x-azure-ref       : -
+    set-cookie        : -
+    body              : false
+
+--- SHOT4 COLD off-peak (+15s) @10:00:27.808 (318ms) sent 2 dots / 1934 chars ---
+    status            : 200 OK
+    www-authenticate  : -
+    server            : -
+    x-azure-ref       : -
+    set-cookie        : -
+    body              : false
+
+================ SUMMARY ================
+  shot1: status=401 (8263ms)
+  shot2: status=401 (3217ms)
+  shot3: status=200 (6106ms)
+  shot4: status=200 (318ms)
+
+VERDICT:
+  BOTH shots failed -> compare their www-authenticate lines:
+    "Missing part delimiters" = header arrived empty/stripped (edge/WAF problem);
+    "no matching key(s)"/"decode the Jwt" = token rejected by the resource server;
+    "expired" = expiry handling.

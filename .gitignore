@@ -1,0 +1,32 @@
+# Deps / build output — Colab runs `npm install` itself
+node_modules/
+
+# WhatsApp sessions + browser profiles (secrets + huge)
+.wwebjs_auth/
+.wwebjs_cache/
+.puppeteer/
+profile-files/
+
+# Real accounts (passwords!) — NEVER push to a public repo.
+# The Colab cell writes accounts.json at runtime from the HTML export.
+accounts.json
+accounts-fake.json
+rate-limited-accounts.json
+
+# Runtime state / logs
+bot-api-logs.txt
+bot-api-status.json
+bot-401-log.txt
+appointment-found.json
+notifier-history.json
+notifier-strategy-logs.json
+bot-session-logs/
+.last-bot-strategy.json
+*.log
+*.err.log
+
+# Local launch helpers / temp
+.bot-launch/
+__pycache__/
+_token_mode_extract/
+qc
