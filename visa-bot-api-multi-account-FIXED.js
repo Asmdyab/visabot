@@ -4044,6 +4044,10 @@ function getBrowserProxyConfig(sessionId = null, targetIP = null) {
 
 // Login and get token with optional proxy support
 async function loginAndGetToken(account, browser, browserProxy = null) {
+  if (!browser) {
+    log(`   ⏭️ No browser available — skipping browser login for ${account.email} (API login only)`);
+    return null;
+  }
   log(`🔐 Logging in: ${account.email}`);
   
   let context = null;
@@ -8755,9 +8759,14 @@ const IS_VISA_TYPE_MODE = VISA_TYPE_FILTER.length > 0;
   }
   log("");
   
+  // Colab/server override: BOT_HEADLESS=1 (set by the Colab cell) or Linux with no
+  // display. System Chrome (channel) + headed mode only exist on a Windows desktop —
+  // on a server Playwright must use its bundled chromium headless instead.
+  const BOT_HEADLESS = ['1', 'true', 'yes'].includes(String(process.env.BOT_HEADLESS || '').trim().toLowerCase())
+    || (process.platform === 'linux' && !process.env.DISPLAY);
   const launchOptions = {
-    headless: false,
-    channel: "chrome",
+    headless: BOT_HEADLESS ? true : false,
+    ...(BOT_HEADLESS ? {} : { channel: "chrome" }),
     args: [
       "--disable-blink-features=AutomationControlled",
       "--ignore-certificate-errors",
@@ -9328,7 +9337,17 @@ const IS_VISA_TYPE_MODE = VISA_TYPE_FILTER.length > 0;
   // CHECK MODE EXECUTION (+ live reschedule loop)
   // =========================
   startLiveWindowControl({ accountCount: accountsToUse.length });
-  let browser = await chromium.launch(launchOptions);
+  // Browser is a login FALLBACK only (API login goes first). On servers without a
+  // display/Chrome the launch fails — keep going with browser=null (API login only)
+  // instead of killing the whole run.
+  let browser = null;
+  try {
+    browser = await chromium.launch(launchOptions);
+  } catch (e) {
+    const why = String((e && e.message) || e || '').split('\n')[0].slice(0, 160);
+    log(`⚠️ Browser launch failed (${why}) — continuing WITHOUT browser (API login only)`);
+    browser = null;
+  }
   try {
     while (true) {
       updateLiveWindowMeta({
@@ -9362,7 +9381,13 @@ const IS_VISA_TYPE_MODE = VISA_TYPE_FILTER.length > 0;
 
       try { await browser.close(); } catch (_) {}
       clearSessionAuthStateForRelogin();
-      browser = await chromium.launch(launchOptions);
+      try {
+        browser = await chromium.launch(launchOptions);
+      } catch (e) {
+        const why = String((e && e.message) || e || '').split('\n')[0].slice(0, 160);
+        log(`⚠️ Browser relaunch failed (${why}) — continuing WITHOUT browser`);
+        browser = null;
+      }
     }
   } finally {
     stopLiveWindowControl();

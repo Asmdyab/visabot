@@ -6602,6 +6602,7 @@ user3@example.com"></textarea>
                 'print(f"WROTE config clockBurst={cfg[\'clockBurst\']} spoof={cfg[\'ipHeaderMode\']}/{cfg[\'ipHeaderCountry\']}", flush=True)',
                 'print(f"WROTE {len(accts)} enabled accounts", flush=True)',
                 '# Blocking run — Colab output = live bot log. Stop = Runtime > Interrupt.',
+                'os.environ["BOT_HEADLESS"] = "1"  # server mode: bundled chromium headless, API login first',
                 'os.chdir(BOT_DIR)',
                 'os.execvp("node", ["node", "visa-bot-api-multi-account-FIXED.js"])'
             ];
