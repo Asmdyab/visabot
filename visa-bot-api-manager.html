@@ -1769,6 +1769,14 @@
                         <button onclick="generateClockBurstColabCell()" class="btn" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);">📋 توليد خلية Colab</button>
                         <button onclick="copyClockBurstColabCell()" class="btn" style="flex: 1; min-width: 160px; background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);">📎 نسخ الخلية</button>
                     </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <button onclick="generateClockBurstPython()" class="btn" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);">🐍 توليد سكربت Python مستقل (بدون Node/clone)</button>
+                        <button onclick="copyClockBurstPython()" class="btn" style="flex: 1; min-width: 160px; background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);">📎 نسخ السكربت</button>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <button onclick="copyVpsSettings()" class="btn" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">🖥️ نسخ إعدادات VPS (سطر واحد لـ EC2)</button>
+                    </div>
+                    <div id="colabPyStatus" style="margin-top: 8px; font-size: 0.85em; font-weight: 700; color: #0c4a6e;"></div>
                     <div id="colabCellStatus" style="margin-top: 8px; font-size: 0.85em; font-weight: 700; color: #854d0e;"></div>
                     <textarea id="colabCellPreview" rows="8" dir="ltr" readonly placeholder="اضغط «توليد خلية Colab» — الخلية الواحدة هتظهر هنا للنسخ إلى Google Colab"
                         style="width: 100%; margin-top: 10px; padding: 12px; border: 2px solid #eab308; border-radius: 8px; font-family: monospace; font-size: 12px; background: #fff; color: #1f2937; text-align: left;"></textarea>
@@ -6650,6 +6658,97 @@ user3@example.com"></textarea>
                 } catch (_) {
                     if (status) status.textContent = '❌ انسخ يدويًا من المربع.';
                 }
+            }
+        }
+
+        function buildClockBurstPythonPayload() {
+            const s = collectClockBurstColabSnapshot();
+            if (s.enabledAccounts.length === 0) return { error: 'no-accounts' };
+            const live = (typeof config === 'object' && config) ? config : {};
+            const colabConfig = {
+                tripDate: s.tripDate,
+                destination: s.destination,
+                requestTimeout: s.requestTimeoutMs,
+                useSpoofedIPHeaders: s.useSpoofedIPHeaders,
+                ipHeaderMode: s.ipHeaderMode,
+                ipHeaderCountry: s.ipHeaderCountry,
+                clockBurst: s.clockBurst,
+                useProxy: !!live.useProxy,
+                proxyServer: live.proxyServer || '',
+                proxyProtocol: live.proxyProtocol || 'http',
+                proxyMode: live.proxyMode || 'single',
+                ipList: Array.isArray(live.ipList) ? live.ipList : []
+            };
+            const enc = (obj) => btoa(unescape(encodeURIComponent(JSON.stringify(obj))));
+            return { configB64: enc(colabConfig), accountsB64: enc(s.enabledAccounts), snapshot: s };
+        }
+
+        async function generateClockBurstPython() {
+            try { playSaveClickSound(); } catch (_) {}
+            const status = document.getElementById('colabPyStatus');
+            const preview = document.getElementById('colabCellPreview');
+            const setStatus = (t) => { if (status) status.textContent = t; };
+            const payload = buildClockBurstPythonPayload();
+            if (payload.error) {
+                setStatus('⚠️ مفيش حسابات مفعّلة — فعّل حساب واحد على الأقل.');
+                return;
+            }
+            setStatus('⏳ جاري تحميل قالب Python...');
+            try {
+                const res = await fetch('/colab-clockburst.py', { cache: 'no-store' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                let tpl = await res.text();
+                if (tpl.indexOf('__CONFIG_B64__') < 0) throw new Error('bad template');
+                tpl = tpl.split('__CONFIG_B64__').join(payload.configB64)
+                         .split('__ACCOUNTS_B64__').join(payload.accountsB64);
+                if (preview) preview.value = tpl;
+                const s = payload.snapshot;
+                setStatus(`✅ جاهز (${(tpl.length / 1024).toFixed(1)}KB): ${s.enabledAccounts.length} حساب | نافذة ${s.clockBurst.windowSec}s × ${s.clockBurst.perAccount} | spoof ${s.ipHeaderMode}/${s.ipHeaderCountry} — بدون Node/clone، الصقه في Colab وشغّل.`);
+                try { showNotification('🐍 تم توليد سكربت Python المستقل!', 'success'); } catch (_) {}
+            } catch (e) {
+                setStatus('❌ فشل تحميل القالب: ' + (e.message || e) + ' — تأكد إن سيرفر المدير شغال (port 3004).');
+            }
+        }
+
+        async function copyClockBurstPython() {
+            const preview = document.getElementById('colabCellPreview');
+            const status = document.getElementById('colabPyStatus');
+            if (!preview || !preview.value || preview.value.indexOf('colab-clockburst') < 0) {
+                await generateClockBurstPython();
+            }
+            const text = (document.getElementById('colabCellPreview') || {}).value || '';
+            if (!text) return;
+            try {
+                await navigator.clipboard.writeText(text);
+                if (status) status.textContent = '📎 اتنسخ السكربت — الصقه في خلية Colab واحدة واضغط Run.';
+            } catch (e) {
+                try {
+                    preview.select();
+                    document.execCommand('copy');
+                    if (status) status.textContent = '📎 اتنسخ (fallback).';
+                } catch (_) {
+                    if (status) status.textContent = '❌ انسخ يدويًا من المربع.';
+                }
+            }
+        }
+
+        async function copyVpsSettings() {
+            try { playSaveClickSound(); } catch (_) {}
+            const status = document.getElementById('colabPyStatus');
+            const setStatus = (t) => { if (status) status.textContent = t; };
+            const payload = buildClockBurstPythonPayload();
+            if (payload.error) {
+                setStatus('⚠️ مفيش حسابات مفعّلة — فعّل حساب واحد على الأقل.');
+                return;
+            }
+            const line = `CFG_B64='${payload.configB64}' ACC_B64='${payload.accountsB64}'`;
+            try {
+                await navigator.clipboard.writeText(line);
+                const s = payload.snapshot;
+                setStatus(`🖥️ اتنسخ سطر الإعدادات (${s.enabledAccounts.length} حساب | نافذة ${s.clockBurst.windowSec}s × ${s.clockBurst.perAccount}) — الصقه قبل أمر التشغيل على الـ VPS.`);
+                try { showNotification('🖥️ اتنسخت إعدادات VPS!', 'success'); } catch (_) {}
+            } catch (e) {
+                setStatus('❌ تعذّر النسخ التلقائي — انسخ يدويًا.');
             }
         }
 

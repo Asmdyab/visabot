@@ -1045,6 +1045,20 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    // Serve standalone Colab runner template (placeholders filled by HTML)
+    if (reqPath === '/colab-clockburst.py' && req.method === 'GET') {
+        const f = path.join(__dirname, 'colab-clockburst.py');
+        fs.readFile(f, 'utf8', (err, data) => {
+            if (err) { res.writeHead(404); res.end(); return; }
+            res.writeHead(200, {
+                'Content-Type': 'text/plain; charset=utf-8',
+                'Cache-Control': 'no-cache'
+            });
+            res.end(data);
+        });
+        return;
+    }
+
     // Upload a new logo
     if (reqPath === '/api/upload-logo' && req.method === 'POST') {
         const chunks = [];
